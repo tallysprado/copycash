@@ -1,3 +1,8 @@
+:root{
+  --blue1: #14213D;
+  --orange: #FCA311;
+  --white: #E5E5E5;
+}
 body {
   background-color: black;
   color: white;
@@ -49,6 +54,7 @@ div.content {
   display: none;
 }
 
+
 @media screen and (max-width: 768px) {
   .mobile-hide{
       display: none !important;
@@ -57,4 +63,14 @@ div.content {
   .mobile {
       display: block;
   }
+  #landing{
+    display: block !important;
+    div.divider{
+      border-left: 0 !important;
+      height: 0vw !important;
+      border-bottom: 6px solid var(--white);
+    }
+    
+  }
+  
 }

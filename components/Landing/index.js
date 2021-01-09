@@ -9,7 +9,7 @@ export default function(){
     
     
     return(
-        <div id='INICIO' className='content'>
+        <div id='landing' className='content'>
             <div style={{display: 'flex', width: '400px',flexDirection: 'column'}}>
                 <h1>AS TRÊS VELAS NUNCA ERRAM!</h1>
                 <p>Deixe um <i>trader</i> profissional de Opções Binárias operar em sua conta com a técnica de maior assertividade do Brasil.</p>
