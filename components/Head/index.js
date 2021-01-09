@@ -10,7 +10,7 @@ const HeadComponent = () => {
 
       <meta property="og:title" content="Copycash" />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="Deixe os melhores operar em sua conta." />
+      <meta property="og:description" content="Deixe eu operar na sua conta bote ai sua senha" />
       <meta
         property="og:image"
         content="https://ibb.co/q08hXKf"
