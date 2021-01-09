@@ -1,0 +1,86 @@
+#navbar {
+    nav {
+      position: fixed; /* Make it stick/fixed */
+      width: 100%;
+      top: 0; /* Stay on top */
+      transition: top 0.3s; /* Transition effect when sliding down (and up) */
+      background-color: black;
+    }
+  
+    nav {
+      display: flex;
+    }
+  
+    h1.logo {
+      flex: 1;
+      padding-left: 50px;
+      font-size: 2em;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      float: right;
+      text-align: center;
+    }
+  
+    nav ul button {
+      background-color: black;
+      border: none;
+      cursor: pointer;
+    }
+  
+    nav ul button:focus {
+      outline: none;
+    }
+  
+    nav ul button li {
+      width: 150px;
+      list-style-type: none;
+      padding: 24px 0px;
+      flex: 1;
+      transition: background-color 0.4s;
+    }
+  
+    nav ul button li:hover {
+      background-color: gray;
+    }
+  
+    nav ul button,
+    nav ul button:visited {
+      color: white;
+      text-decoration: none;
+    }
+    div.hamburger {
+      height: 100%;
+      width: 2em;
+      margin: auto;
+      padding-right: 50px;
+    }
+    // @keyframes appears {
+    //   0% { transform: scaleY(0) }
+    //   100% { transform: scaleY(1) }
+    // }
+    .mobile-menu {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100%;
+      transform-origin: top;
+      ul{
+        box-shadow: 0 3px 2px -2px white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        button {
+          display: flex;
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+  }
+  

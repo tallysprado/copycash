@@ -1,0 +1,52 @@
+#INICIO{
+    .about{
+        display: flex;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: calc(100vh - 99px);
+        padding-top: 99px;
+    
+    }
+    .content h1{
+        color: var(--white);
+        font-size: 2.5em;
+        text-align: left;
+    }
+    
+    
+    .divider{
+        margin: 4vw;
+        border-left: 6px solid var(--white);
+        height: 200px;    
+    }
+    .divider-mobile{
+        color: var(--white);
+        background-color: var(--white);
+        height: 5px;
+        width: 80%;
+        align-self: center;
+        margin: 5vh;
+    }
+    .content p{
+        color: var(--white);
+        font-size: 1.5em;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: calc(100vh - 99px);
+    }
+    
+    .player-wrapper{
+        display: flex;
+    }
+    .react-player{
+        display: flex;
+    }
+}
