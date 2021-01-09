@@ -13,7 +13,7 @@ const HeadComponent = () => {
       <meta property="og:description" content="Deixe eu operar na sua conta bote ai sua senha" />
       <meta
         property="og:image"
-        content="https://ibb.co/q08hXKf"
+        content="https://i.ibb.co/CJy4NgZ/logo.png"
       />
     </Head>
   );
