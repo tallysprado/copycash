@@ -13,7 +13,7 @@ const HeadComponent = () => {
       <meta property="og:description" content="Deixe os melhores operar em sua conta." />
       <meta
         property="og:image"
-        content="https://lukeflima.dev.br/lucaslima.png"
+        content="https://ibb.co/q08hXKf"
       />
     </Head>
   );
