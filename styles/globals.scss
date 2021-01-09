@@ -64,11 +64,30 @@ div.content {
       display: block;
   }
   #landing{
+    margin-top: 21vw !important;
     display: block !important;
     div.divider{
       border-left: 0 !important;
       height: 0vw !important;
       border-bottom: 6px solid var(--white);
+    }
+    h1{
+      color: var(--white);
+      font-size: 1.5em !important;
+      text-align: center !important;
+      margin-bottom: 0px;
+    }
+    button{
+      align-self: center;
+      width: 80vw !important;
+
+    }
+    p{
+        color: var(--white);
+        font-size: 1.3em;
+        width: 90vw;
+        align-self: center;
+        text-align: center !important;
     }
     
   }
