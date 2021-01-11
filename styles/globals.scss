@@ -67,6 +67,7 @@ div.content {
     margin-top: 100px;
     display: block !important;
     width: 100vw;
+    height: 100vh;
     div.divider{
       border-left: 0 !important;
       height: 0vw !important;
@@ -89,9 +90,27 @@ div.content {
         align-self: center;
         text-align: center !important;
     }
- 
-    
   }
+  #sobre{
+    display: flex;
+    div.background{
+      margin-top: 8vw;
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-size: cover;    
 
+    }
+    div.story{
+      max-width: 25vw !important;
+      margin-left: 0px !important;
+    }
+    h3{
+      font-size: 1.8em !important;
+    }
+    p{
+      max-width: 50vh !important;
+      font-size: 1em!important;
 
+    }
+  }
 }
