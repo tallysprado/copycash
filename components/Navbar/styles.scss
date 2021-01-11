@@ -9,6 +9,7 @@
   
     nav {
       display: flex;
+      
     }
   
     h1.logo {
@@ -22,6 +23,7 @@
       flex-direction: row;
       float: right;
       text-align: center;
+      background-color: black;
     }
   
     nav ul button {
@@ -35,6 +37,7 @@
     }
   
     nav ul button li {
+
       width: 150px;
       list-style-type: none;
       padding: 24px 0px;
@@ -62,8 +65,9 @@
     //   100% { transform: scaleY(1) }
     // }
     .mobile-menu {
+      background-color: black;
       position: absolute;
-      top: 90px;
+      top: 80px;
       left: 0;
       right: 0;
       bottom: 0;

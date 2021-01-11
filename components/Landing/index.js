@@ -20,7 +20,6 @@ export default function Index(){
                 <ReactPlayer
                 className='react-player'
                 controls
-                width='65vh'
                 id='video'
                 url='https://www.youtube.com/watch?v=btJ40KLtu24'/>
             </div>
