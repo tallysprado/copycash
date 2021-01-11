@@ -1,0 +1,55 @@
+#entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    background-color: black;
+    
+    h3{
+        
+        color: white;
+    }
+
+    h2{
+        font-size: 1.2em;    
+        color: gray;
+        width: 300px;
+        text-align: end;
+    }
+
+    div{
+        margin: 20px;
+    }
+    button {
+        background-color: var(--white);
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 24px 0px;
+        flex: 1;
+        transition: background-color 0.4s;
+    }
+
+    button:hover{
+
+        color: var(--white);
+        background-color: black;
+    }
+
+    input{
+        padding: 24px 0px; 
+        width: 300px;
+    }
+    div.login{
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+    div.divider{
+        margin: 6vh;
+        border-left: 6px solid var(--white);
+        height: 200px; 
+    }
+    
+}

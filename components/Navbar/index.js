@@ -15,11 +15,11 @@ const buttons = [
   },
   {
     label: "Sobre",
-    view: "about-me",
+    view: "sobre",
   },
   {
     label: "Entrar",
-    view: "projects",
+    view: "entrar",
   },
 ];
 

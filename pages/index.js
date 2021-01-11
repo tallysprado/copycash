@@ -4,8 +4,8 @@ import Head from '../components/Head'
 
 import Landing from '../components/Landing'
 import Navbar from "../components/Navbar"
-
-
+import Sobre from '../components/Sobre'
+import Login from '../components/Login'
 
 const titles = [
     "Copycash",
@@ -34,6 +34,8 @@ const Index = () => {
         <Head/>
         <Navbar title={title}/>
         <Landing/>
+        <Sobre/>
+        <Login/>
         {/* <Projects/> */}
     </>
 )

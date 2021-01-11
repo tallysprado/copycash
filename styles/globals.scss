@@ -57,15 +57,16 @@ div.content {
 
 @media screen and (max-width: 768px) {
   .mobile-hide{
-      display: none !important;
+    display: none !important;
   }
   
   .mobile {
-      display: block;
+    display: block;
   }
-  #landing{
-    margin-top: 21vw !important;
+  #landing, #entrar{
+    margin-top: 100px;
     display: block !important;
+    width: 100vw;
     div.divider{
       border-left: 0 !important;
       height: 0vw !important;
@@ -85,11 +86,12 @@ div.content {
     p{
         color: var(--white);
         font-size: 1.3em;
-        width: 90vw;
         align-self: center;
         text-align: center !important;
     }
+ 
     
   }
-  
+
+
 }

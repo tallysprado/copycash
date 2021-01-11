@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react'
 function onClick(view){
     document.getElementById(view).scrollIntoView({ behavior: 'smooth', block: 'center' })
 }
-export default function(){
+export default function Index(){
     
     
     return(
