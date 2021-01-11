@@ -24,14 +24,16 @@ export default function Login(){
     const dispatch = useDispatch()
     return(
         <div id='entrar'>      
-            <h2>Digite o E-mail cadastrado na Hotmart</h2>
-            <div className='divider'/>
-            <div className='login'>
-                <h3>E-MAIL</h3>
-                <input onChange={(event)=>{
-                    setEmail(event.target.value)
-                }} placeholder='Digite aqui...' type='text' />
-                <button type="submit" onClick={(event)=>entrar(event,dispatch,email, 'teste123')} >Entrar</button>
+            <div className='entrar'>
+                <h2>Digite o E-mail cadastrado na Hotmart</h2>
+                <div className='divider'/>
+                <div className='login'>
+                    <h3>E-MAIL</h3>
+                    <input onChange={(event)=>{
+                        setEmail(event.target.value)
+                    }} placeholder='Digite aqui...' type='text' />
+                    <button type="submit" onClick={(event)=>entrar(event,dispatch,email, 'teste123')} >Entrar</button>
+                </div>
             </div>
         </div>
     )

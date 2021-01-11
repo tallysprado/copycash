@@ -1,19 +1,26 @@
 #entrar{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: row;
-    background-color: black;
-    
     h3{
         
         color: white;
     }
+    div.entrar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(50vh-99px);
+        flex-direction: row;
+        background-color: rgba(0,0,0,0.8);
+        width: 100vw;
+        margin: auto;
+    }
 
     h2{
         font-size: 1.2em;    
-        color: gray;
+        color: var(--white);
         width: 300px;
         text-align: end;
     }

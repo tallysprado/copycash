@@ -4,7 +4,7 @@
   --white: #E5E5E5;
 }
 body {
-  background-color: black;
+  background: url('../public/background1.jpg') no-repeat fixed;
   color: white;
   margin: 0px;
   padding: 0px;
@@ -25,37 +25,17 @@ div.content {
   padding-top: 0px;
 }
 
-.name {
-  margin: auto;
-  font-size: 5em;
-}
-
-.whitebg {
-  background-color: white;
-}
-
-.blackbg {
-  background-color: black;
-}
-
-.blacktxt {
-  color: black;
-}
-
-.wip {
-  display: block;
-  color: yellow;
-  margin-bottom: 0;
-  margin-left: 50vw;
-  bottom: 0em;
-}
-
 .mobile {
   display: none;
 }
 
 
 @media screen and (max-width: 768px) {
+
+  body{
+    background: url('../public/background1.jpg') no-repeat fixed;
+
+  }
   .mobile-hide{
     display: none !important;
   }
@@ -63,11 +43,20 @@ div.content {
   .mobile {
     display: block;
   }
+  #entrar{
+    display: flex;
+    align-items: center;
+  }
   #landing, #entrar{
-    margin-top: 100px;
+    margin-top: 100px !important;
     display: block !important;
-    width: 100vw;
-    height: 100vh;
+    width: 100vw !important;
+    height: 100vh !important;
+
+    div.entrar{
+      display: block !important;
+      height: 100vw !important;
+    }
     div.divider{
       border-left: 0 !important;
       height: 0vw !important;
@@ -78,6 +67,9 @@ div.content {
       font-size: 1.5em !important;
       text-align: center !important;
       margin-bottom: 0px;
+    }
+    h2{
+
     }
     button{
       align-self: center;
@@ -93,8 +85,9 @@ div.content {
   }
   #sobre{
     display: flex;
+    margin-top: 20vw;
+
     div.background{
-      margin-top: 8vw;
       height: 50vh;
       background-repeat: no-repeat;
       background-size: cover;    
@@ -103,12 +96,18 @@ div.content {
     div.story{
       width: 0vw!important;
       margin-left: 0px !important;
+      background-color: black !important;
+      width: 50vw !important;
+      height: 100vh!important;
+      
     }
     h3{
-      font-size: 1.8em !important;
+      margin-left: 0px!important;
+      font-size: 1.6em !important;
     }
     p{
-      width: 50vw !important;
+      margin-left: 0px!important;
+      width: 45vw !important;
       font-size: 1em!important;
 
     }

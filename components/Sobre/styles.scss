@@ -1,29 +1,35 @@
 #sobre{
-    height: calc(100vh - 99px);
+    height: 100vh;
+    padding-top: 100px;
     display: flex;
     div.background{
-        background-image: url('../../public/background.png');
         width: 50%;
-        height: calc(100vh - 50px);
+        height: calc(100vh);
+        background-image: url('../../public/background.png');
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: cover;
+
     }
     div.story{
-        margin-top: 2vw;
+        
+        background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: left;
         align-items: flex-start;
         width: 50vw;
-        margin-left: 25px;
-        margin-right: 50px;
+        height: 100vh;
     }
     h3{
+        margin-left: 20px;
+        margin-top: 5vw;
         color: var(--white);
         font-size: 2em;
     }
     p{
+        margin-left: 20px;
         text-align: left;
+        width: 80vh;
         font-size: 1.1em;
     }
 }
