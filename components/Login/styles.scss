@@ -28,13 +28,21 @@
     div{
         margin: 20px;
     }
+
+    button.comprar{
+        background-color: var(--white);
+        border: none;
+        margin-top: 10px;
+        padding: 24px 0px;
+        transition: background-color 0.4s;
+        width: 50vw;
+    }
+
     button {
         background-color: var(--white);
         border: none;
-        cursor: pointer;
         margin-top: 10px;
         padding: 24px 0px;
-        flex: 1;
         transition: background-color 0.4s;
     }
 
@@ -43,10 +51,9 @@
         color: var(--white);
         background-color: black;
     }
-
+   
     input{
         padding: 24px 0px; 
-        width: 300px;
     }
     div.login{
         align-items: stretch;

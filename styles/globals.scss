@@ -44,34 +44,54 @@ div.content {
     display: block;
   }
   #entrar{
-    display: flex;
-    align-items: center;
-  }
-  #landing, #entrar{
-    margin-top: 100px !important;
     display: block !important;
-    width: 100vw !important;
-    height: 100vh !important;
-
+    max-height: 100vh !important;
+    padding-top: 50vh;
+    
     div.entrar{
       display: block !important;
-      height: 100vw !important;
-      margin-top: 100px !important;
+      text-align: center !important;
+      align-items: center !important;
+      justify-content: center !important;
+      h2{
+        justify-self: center;
+        align-self: center;
+        width: 55vh;
+        text-align: center !important;
+      }
+      button.comprar{
+        width: 100vw !important;
+      }
+    
     }
     div.divider{
       border-left: 0 !important;
       height: 0vw !important;
       border-bottom: 6px solid var(--white);
     }
+    
+
+
+  }
+  #landing{
+    margin-top: 100px !important;
+    display: block !important;
+    width: 100vw !important;
+    height: 100vh !important;
+
+    div.divider{
+      border-left: 0 !important;
+      height: 0vw !important;
+      border-bottom: 6px solid var(--white);
+    }
+    
     h1{
       color: var(--white);
       font-size: 1.5em !important;
       text-align: center !important;
-      margin-bottom: 0px;
+      margin-bottom: 0px !important ;
     }
-    h2{
-
-    }
+    
     button{
       align-self: center;
       width: 80vw !important;
@@ -92,7 +112,7 @@ div.content {
       height: 50vh;
       background-repeat: no-repeat;
       background-size: cover;    
-
+      
     }
     div.story{
       width: 0vw!important;
@@ -103,6 +123,8 @@ div.content {
       
     }
     h3{
+      margin-top: 10vw;
+
       margin-left: 0px!important;
       font-size: 1.6em !important;
     }
