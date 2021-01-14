@@ -1,7 +1,7 @@
 #navbar {
     nav {
       position: fixed; /* Make it stick/fixed */
-      width: 100%;
+      width: 100vw;
       top: 0; /* Stay on top */
       transition: top 0.3s; /* Transition effect when sliding down (and up) */
       background-color: black;

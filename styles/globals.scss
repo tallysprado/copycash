@@ -8,12 +8,11 @@ body {
   color: white;
   margin: 0px;
   padding: 0px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 div.content {
   display: flex;
-  flex:3;
   height: calc(100vh - 99px);
   width: 100%;
   padding-top: 99px;
@@ -34,7 +33,6 @@ div.content {
 
   body{
     background: url('../public/background1.jpg') no-repeat fixed;
-
   }
   .mobile-hide{
     display: none !important;
@@ -56,7 +54,7 @@ div.content {
       h2{
         justify-self: center;
         align-self: center;
-        width: 55vh;
+        width: 50vh;
         text-align: center !important;
       }
       button.comprar{
@@ -76,7 +74,7 @@ div.content {
   #landing{
     margin-top: 100px !important;
     display: block !important;
-    width: 100vh !important;
+    width: 100vw !important;
     height: 100vh !important;
 
     div.divider{
@@ -99,7 +97,8 @@ div.content {
     }
     p{
         color: var(--white);
-        font-size: 1.3em;
+        width: 50vh;
+        font-size: 1.3em !important; 
         align-self: center;
         text-align: center !important;
     }
