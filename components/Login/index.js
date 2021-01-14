@@ -25,17 +25,19 @@ export default function Login(){
     return(
         <div id='entrar'>      
             <div className='entrar'>
+
                 <div className='login'>
-                    <h3>E-MAIL DE COMPRA NA HOTMART.</h3>
+                    <h2>Não tem a assinatura de nenhum pacote ainda? Aproveita logo a primeira turma de 30 participantes. Pressione o botão abaixo para adquirir o melhor robô de opções binárias do Brasil.</h2>
+                    <button>ADQUIRA JÁ!</button>  
+                </div>
+                <div className='divider'/>
+                <div className='login'>
+                    <h3>E-MAIL</h3>
                     <input onChange={(event)=>{
                         setEmail(event.target.value)
                     }} placeholder='Digite aqui...' type='text' />
                     <button type="submit" onClick={(event)=>entrar(event,dispatch,email, 'teste123')} >Entrar</button>
-                </div>
-                <div className='divider'/>
-
-                <h2>Não tem a assinatura de nenhum pacote ainda? Aproveita logo a primeira turma de 30 participantes. Pressione o botão abaixo para adquirir o melhor robô de opções binárias do Brasil.</h2>
-                <button className='comprar'>ADQUIRA JÁ!</button>               
+                </div>                  
             </div>
         </div>
     )

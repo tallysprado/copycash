@@ -11,7 +11,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: calc(50vh-99px);
+        height: auto;
         flex-direction: row;
         background-color: rgba(0,0,0,0.8);
         width: 100vw;
@@ -21,29 +21,21 @@
     h2{
         font-size: 1.2em;    
         color: var(--white);
-        width: 300px;
+        width: 50vh;
         text-align: end;
     }
 
     div{
         margin: 20px;
     }
-
-    button.comprar{
-        background-color: var(--white);
-        border: none;
-        margin-top: 10px;
-        padding: 24px 0px;
-        transition: background-color 0.4s;
-        width: 50vw;
-    }
-
+   
     button {
         background-color: var(--white);
         border: none;
         margin-top: 10px;
         padding: 24px 0px;
         transition: background-color 0.4s;
+        margin-bottom: 25px;
     }
 
     button:hover{
@@ -54,6 +46,11 @@
    
     input{
         padding: 24px 0px; 
+    }
+    div.buy-info{
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
     }
     div.login{
         align-items: stretch;
