@@ -1,0 +1,37 @@
+#card{
+    display: flex;
+    background-color: black;
+    flex: 1;
+    padding-left: 50px;
+    height: 100vh;
+    flex-direction: column;
+    div.divider{
+        margin-top: 50px !important;
+        width: 300px;
+        border-bottom: 6px solid var(--white);
+        margin-bottom: 50px;
+    }
+}
+
+#config{
+    display: flex;
+    flex-direction: column;
+    
+    input{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    table{ 
+        display: block;
+    }
+    #card{
+        padding: 0px;
+        display: block;
+    }
+    #config{
+        display: block;
+    }
+}

@@ -28,7 +28,15 @@
     div{
         margin: 20px;
     }
-   
+    a:hover{
+        color: var(--white);
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        justify-content: center;
+        display: flex;
+    }
     button {
         background-color: var(--white);
         border: none;
@@ -39,7 +47,6 @@
     }
 
     button:hover{
-
         color: var(--white);
         background-color: black;
     }
@@ -63,4 +70,42 @@
         height: 200px; 
     }
     
+}
+
+@media screen and (max-width: 768px){
+    #entrar{
+        display: block !important;
+        max-height: 100vh !important;
+        padding-top: 50vh;
+        a:hover{
+          color: var(--white);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            justify-content: center;
+            display: flex;
+        }
+        div.entrar{
+          display: block !important;
+          text-align: center !important;
+          align-items: center !important;
+          justify-content: center !important;
+          h2{
+            justify-self: center;
+            align-self: center;
+            width: 50vh;
+            text-align: center !important;
+          }
+          button.comprar{
+            width: 100vw !important;
+          }
+        
+        }
+        div.divider{
+          border-left: 0 !important;
+          height: 0vw !important;
+          border-bottom: 6px solid var(--white);
+        }
+    }
 }

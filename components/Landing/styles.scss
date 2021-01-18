@@ -1,9 +1,11 @@
 #landing{
 
     display: flex;
+    width: 90vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: auto;
 
     h1{
         color: black;
@@ -15,8 +17,6 @@
         font-size: 1.5em;
         text-align: right;
     }
-
-    
     button{
         background-color: var(--white);
         border: none;
@@ -47,3 +47,38 @@
         display: flex;
     }
   }
+
+@media screen and (max-width: 768px){
+    #landing{
+        margin-top: 100px !important;
+        display: block !important;
+        width: 100vw !important;
+        height: 100vh !important;
+    
+        div.divider{
+          border-left: 0 !important;
+          height: 0vw !important;
+          border-bottom: 6px solid var(--white);
+        }
+        
+        h1{
+          color: var(--white);
+          font-size: 1.5em !important;
+          text-align: center !important;
+          margin-bottom: 0px !important ;
+        }
+        
+        button{
+          align-self: center;
+          width: 80vw !important;
+    
+        }
+        p{
+            color: var(--white);
+            width: 50vh;
+            font-size: 1.3em !important; 
+            align-self: center;
+            text-align: center !important;
+        }
+      }
+}

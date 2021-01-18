@@ -10,9 +10,16 @@ body {
   padding: 0px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   overflow-x: hidden !important;
-  background-attachment: scroll !important;
+  background-attachment: fixed !important;
 }
 
+table, th, td{
+  border: 0.5px solid var(--white);
+  justify-content: space-around;
+}
+table{
+  border-spacing: 1rem;
+}
 div.content {
   display: flex;
   height: calc(100vh - 99px);
@@ -30,6 +37,13 @@ div.content {
   display: none;
 }
 
+#dashboard{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -43,68 +57,16 @@ div.content {
   .mobile {
     display: block;
   }
-  #entrar{
+  #dashboard{
     display: block !important;
-    max-height: 100vh !important;
-    padding-top: 50vh;
-    
-    div.entrar{
-      display: block !important;
-      text-align: center !important;
-      align-items: center !important;
-      justify-content: center !important;
-      h2{
-        justify-self: center;
-        align-self: center;
-        width: 50vh;
-        text-align: center !important;
-      }
-      button.comprar{
-        width: 100vw !important;
-      }
-    
-    }
-    div.divider{
-      border-left: 0 !important;
-      height: 0vw !important;
-      border-bottom: 6px solid var(--white);
-    }
-    
-
-
   }
-  #landing{
-    margin-top: 100px !important;
+  #card{
+    
     display: block !important;
-    width: 100vw !important;
-    height: 100vh !important;
-
-    div.divider{
-      border-left: 0 !important;
-      height: 0vw !important;
-      border-bottom: 6px solid var(--white);
-    }
-    
-    h1{
-      color: var(--white);
-      font-size: 1.5em !important;
-      text-align: center !important;
-      margin-bottom: 0px !important ;
-    }
-    
-    button{
-      align-self: center;
-      width: 80vw !important;
-
-    }
-    p{
-        color: var(--white);
-        width: 50vh;
-        font-size: 1.3em !important; 
-        align-self: center;
-        text-align: center !important;
-    }
   }
+  
+  }
+  
   #sobre{
     display: flex;
     margin-top: 20vw;
@@ -135,5 +97,5 @@ div.content {
       font-size: 1em!important;
 
     }
-  }
 }
+
