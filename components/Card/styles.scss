@@ -43,7 +43,14 @@
     
     table{ 
         display: block;
+        border-spacing: 0.5em;
+        width: fit-content;
     }
+    .table-scroll{
+        overflow: scroll;
+        overflow-x: scroll;
+    }
+    
     #card{
         padding: 0px;
         display: block;
