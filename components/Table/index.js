@@ -3,28 +3,28 @@
 export default function Table(){
     const dados = [
         {   
-            data: "08/11/2020",
+            data: "12/11/2020",
             direcao: "BAIXO",
             paridade: "GBPUSD",
             duracao: "60",
             resultado: true,
         },
         {
-            data: "08/11/2020",
+            data: "11/11/2020",
             direcao: "BAIXO",
             paridade: "GBPCAD",
             duracao: "45",
             resultado: true,
         },
         {
-            data: "08/11/2020",
+            data: "10/11/2020",
             direcao: "BAIXO",
             paridade: "EURNZD",
             duracao: "120",
             resultado: true,
         },
         {
-            data: "08/11/2020",
+            data: "09/11/2020",
             direcao: "BAIXO",
             paridade: "GBPUSD",
             duracao: "30",
@@ -44,9 +44,24 @@ export default function Table(){
             duracao: "15",
             resultado: true,
         },
+        {
+            data: "08/11/2020",
+            direcao: "BAIXO",
+            paridade: "EURUSD",
+            duracao: "15",
+            resultado: true,
+        },
+        {
+            data: "08/11/2020",
+            direcao: "BAIXO",
+            paridade: "EURUSD",
+            duracao: "15",
+            resultado: true,
+        },
+        
     ]
     return(
-        <div>
+        <div className='table-scroll'>
             <table>
                 <tr>
                     <th>Data</th>
@@ -63,7 +78,7 @@ export default function Table(){
                             const {data, direcao, paridade, duracao, resultado} = operacao
                             return(
                                 <tr>
-                                    <td style={resultado?{color:'green'}:{color:'red'}} >{data}</td>
+                                    <td style={{color: resultado?"green":"red"}} >{data}</td>
                                     <td>{direcao}</td>
                                     <td>{paridade}</td>
                                     <td>{duracao}</td>

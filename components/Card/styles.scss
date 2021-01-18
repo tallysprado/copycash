@@ -16,9 +16,26 @@
 #config{
     display: flex;
     flex-direction: column;
-    
+    div{
+        display: flex;
+        flex-direction: row;
+        width: 50vh;
+        
+    }
+    button{
+        margin-top: 25px !important;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0px !important;    
+    }
+    div.buttons{
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch;
+        width: 50vh;
+    }
     input{
-        width: 50%;
+        width:  50%;
     }
 }
 
@@ -30,8 +47,26 @@
     #card{
         padding: 0px;
         display: block;
+
+        div.title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                margin-bottom: 0px;
+            }
+            .divider{
+                margin-top: 25px !important; 
+            }
+        }
     }
     #config{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 50%;
+        }
     }
 }

@@ -6,7 +6,17 @@ const Index = () => {
             <p>Valor</p>
             <input placeholder='R$'/>
 
-            <p></p>
+            <p>Soros</p>
+            <div>
+                <input type='number' placeholder='Nível' min={0}/>
+                <input className='check' type='checkbox'/>
+            </div>
+
+            <div className='buttons'>
+                <button>Salvar</button>
+                <button>Sair</button>
+            </div>
+
         </div>
     )
 }

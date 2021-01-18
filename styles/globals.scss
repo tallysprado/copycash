@@ -12,7 +12,25 @@ body {
   overflow-x: hidden !important;
   background-attachment: fixed !important;
 }
+.table-scroll{
+  overflow: scroll;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+button {
+  background-color: var(--white);
+  border: none;
+  margin-top: 10px;
+  padding: 24px 0px;
+  transition: background-color 0.4s;
+  margin-bottom: 25px;
+}
 
+button:hover{
+  color: var(--white);
+  background-color: black;
+}
 table, th, td{
   border: 0.5px solid var(--white);
   justify-content: space-around;
