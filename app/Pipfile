@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+"iqoptionapi@ git+https://github.com/lu-yi-hsun/iqoptionapi@e96ba2c5b905a139a4765167b08c5df48cf57773" = "*"
+Flask = "==1.1.2"
+python-dotenv = "==0.14.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

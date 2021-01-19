@@ -20,20 +20,30 @@
         display: flex;
         flex-direction: row;
         width: 50vh;
-        
+
     }
-    button{
-        margin-top: 25px !important;
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 0px !important;    
-    }
+
     div.buttons{
         display: flex;
-        align-items: stretch;
-        justify-content: stretch;
+        justify-content: space-around;
+        align-items: center;
         width: 50vh;
+        margin-top: 10vw;
     }
+    button{
+        
+        width: 100%;
+        background-color: var(--white);
+        border: none;
+        padding: 24px 0px;
+        transition: background-color 0.4s;
+        
+    }
+    button:hover{
+        color: var(--white);
+        background-color: black;
+    }
+    
     input{
         width:  50%;
     }
@@ -72,6 +82,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
         div{
             width: 50%;
         }

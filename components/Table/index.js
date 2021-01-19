@@ -58,7 +58,6 @@ export default function Table(){
             duracao: "15",
             resultado: true,
         },
-        
     ]
     return(
         <div className='table-scroll'>
@@ -69,7 +68,6 @@ export default function Table(){
                     <th>Duração</th>
                     <th>Paridade</th>
                     <th>Resultado</th>
-
                 </tr>
 
                 {
