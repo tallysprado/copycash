@@ -13,14 +13,20 @@ api.connect()
 def paridades():
     data = request.get_json()
     print(data)
-    paridades = api.paridades()
-    print(paridades)
-    return {'paridades': paridades}
+    binary, digital = api.paridades()
+    return {'binary': binary, 'digital': digital}
 
 @app.route("/buy", methods=['POST'])
 def buy():
     data = request.get_json()
-    print(data)
+    paridade = data['paridade']
+    tipo = data['tipo']
+    expiracao = data['expiracao']
+    direcao = data['direcao']
+
+    print( direcao, tipo, paridade, expiracao)
+    
+    api.buy(paridade,10, direcao, expiracao, tipo)
 
     return {"buy-info": 'test'}
 

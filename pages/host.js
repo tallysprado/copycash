@@ -35,31 +35,37 @@ export default function Host(){
             setAtivos(paridades)
         }
         loadData()
+        setTipo("BINÁRIA")    
+        setDirecao("BAIXO")
     }, [])
-    console.log(ativos.paridades)    
+    console.log(ativos.paridades)
+    
     return(
         <div id='host'>
             <div className='container'>
                 <div>
                     <p>Paridade</p>
                     <select onChange={(event)=>setParidade(event.target.value)}>
-                        <option value="" selected disabled hidden>Escolha o ativo</option>
+                    <option disabled selected value>Selecione um ativo</option>
                         {   
-                            ativos.paridades &&
-                            ativos.paridades.map((ativo) => {
+                            ativos.binary &&
+                            ativos.binary.map((ativo) => {
                                 return(
                                     <option>{ativo}</option>
                                 )
                             })
                         }
+                        <option disabled>-- DIGITAL --</option>
+                        {
+                            ativos.digital &&
+                            ativos.digital.map((ativo)=>(<option>{ativo}</option>))
+                        }
                     </select>
                 </div>
                 <div>
                     <p>Direção</p>
-                    <select 
-                    defaultValue
-                    onChange={(event)=>setDirecao(event.target.value)}>
-                        <option selected>BAIXO</option>
+                    <select onChange={(event)=>setDirecao(event.target.value)}>
+                        <option>BAIXO</option>
                         <option>CIMA</option>
                     </select>
                 </div>
@@ -74,7 +80,7 @@ export default function Host(){
                 <div>
                     <p>Tipo</p>
                     <select onChange={(event)=>setTipo(event.target.value)}>
-                        <option selected>BINÁRIA</option>
+                        <option>BINÁRIA</option>
                         <option>DIGITAL</option>
                     </select>
                 </div>
