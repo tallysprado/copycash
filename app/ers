@@ -1,5 +1,0 @@
- id |        username        |                                                              password                                                              | roles | conta_id | is_active 
-----+------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+----------+-----------
-  1 | tallys.prado@gmail.com | $pbkdf2-sha512$25000$ynnvXev9HyMEAABAyBlDKA$LwPSb0Z3DhFBrhIaxM3ofFoscK6WdRkXslRiAhONlecKrhjyTQSFUMeeMSes0AC.P0wgw1slfJB7AAfc9Nwpyg |       |          | t
-(1 row)
-

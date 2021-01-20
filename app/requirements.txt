@@ -1,4 +1,0 @@
-wheel==0.35.1
-iqoptionapi @ git+https://github.com/Lu-Yi-Hsun/iqoptionapi@e96ba2c5b905a139a4765167b08c5df48cf57773
-flask==1.1.2
-python-dotenv==0.14.0

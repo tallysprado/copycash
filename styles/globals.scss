@@ -65,6 +65,21 @@ div.content {
   height: 100vh;
 }
 
+#host{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  div{
+    margin: auto;
+    padding: 30px;
+  }
+  div.container{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
