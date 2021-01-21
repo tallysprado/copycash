@@ -39,9 +39,9 @@ def buy():
 
     print( direcao, tipo, paridade, expiracao)
     
-    api.buy(paridade,10, direcao, expiracao, tipo)
+    check = api.buy(paridade,10, direcao, expiracao, tipo)
 
-    return {"buy-info": 'test'}
+    return {'Compra': check}
 
 @app.route("/config", methods=['POST'])
 def config():
@@ -70,7 +70,7 @@ def config():
 
     print(valor, soros, email, senha)
 
-    return {'config-info': 'test'}
+    return {'Conta': conta}
 
 
 if __name__ == "__main__":

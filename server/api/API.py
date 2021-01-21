@@ -48,5 +48,6 @@ class API:
             check, id = self.api.buy_digital_spot(paridade, valor, action, expiracao)
             if check:
                 print("ordem aberta")
+        return check
 
     
