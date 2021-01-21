@@ -1,14 +1,12 @@
 import {useState, useEffect} from 'react'
-import api from './api'
+import {BUY_URL, PAIR_URL} from '../constants'
 
-
-const buy_api = 'http://localhost:5000/buy'
 function send(event,paridade, expiracao, tipo, direcao){
     event.preventDefault()
     const reqOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
+        body: JSON.stringify({
             paridade: paridade,
             expiracao: expiracao,
             tipo: tipo,
@@ -16,7 +14,7 @@ function send(event,paridade, expiracao, tipo, direcao){
         })
     }
 
-    fetch(buy_api, reqOptions)
+    fetch(BUY_URL, reqOptions)
         .then(response => response.json())
         .then(data => console.log(data))
 }
@@ -30,7 +28,7 @@ export default function Host(){
 
     useEffect(()=>{
         async function loadData(){
-            const response = await fetch('http://localhost:5000/paridades')
+            const response = await fetch(PAIR_URL)
             const paridades = await response.json()
             setAtivos(paridades)
         }
@@ -46,7 +44,7 @@ export default function Host(){
                 <div>
                     <p>Paridade</p>
                     <select onChange={(event)=>setParidade(event.target.value)}>
-                    <option disabled selected value>Selecione um ativo</option>
+                    <option disabled selected value>-- BINÁRIA --</option>
                         {   
                             ativos.binary &&
                             ativos.binary.map((ativo) => {

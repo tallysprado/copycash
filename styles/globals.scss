@@ -12,12 +12,7 @@ body {
   overflow-x: hidden !important;
   background-attachment: fixed !important;
 }
-.table-scroll{
-  overflow: scroll;
-  height: 400px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
+
 /*
 button {
   background-color: var(--white);
@@ -34,13 +29,7 @@ button:hover{
   background-color: black;
 }
 */
-table, th, td{
-  border: 0.5px solid var(--white);
-  justify-content: space-around;
-}
-table{
-  border-spacing: 1rem;
-}
+
 div.content {
   display: flex;
   height: calc(100vh - 99px);

@@ -5,8 +5,23 @@
     padding-left: 50px;
     height: 100vh;
     flex-direction: column;
+
+    table, th, td{
+        border: 0.5px solid var(--white);
+        justify-content: space-around;
+    }
+    table{
+        height: 100%;
+        border-spacing: 1rem;
+    }
+    .table-scroll{
+        overflow: scroll;
+        height: 70vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
     div.divider{
-        margin-top: 50px !important;
+        margin-top: 40px !important;
         width: 300px;
         border-bottom: 6px solid var(--white);
         margin-bottom: 50px;
@@ -26,14 +41,12 @@
 
     div.buttons{
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        width: 50vh;
-        margin-top: 10vw;
+        padding-top: 10px;
     }
     button{
-        
-        width: 100%;
+        margin: 10px;
+        width: 50vw;
         background-color: var(--white);
         border: none;
         padding: 24px 0px;
