@@ -2,9 +2,13 @@ from flask import Flask, request, jsonify
 from API import API
 import os
 from flask_cors import CORS
+
+
 app = Flask(__name__)
 cors = CORS()
 cors.init_app(app)
+CORS(app, resouces={r"/*": {"origins": "*"}})
+
 
 api = API(email='fokrainsdetrosovisk@gmail.com', senha='Teste123')
 api.connect()
