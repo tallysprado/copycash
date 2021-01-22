@@ -1,13 +1,13 @@
 import {createStore} from 'redux';
 
 const INITIAL_STATE = {
-    token: '',
+    isLogged: false,
 }
 
 function token(state=INITIAL_STATE, action){
     switch(action.type){
-        case 'TOKEN':
-            return {...state, token: action.title}
+        case 'LOGIN':
+            return {...state, isLogged: action.title}
         default:
             return state 
     }

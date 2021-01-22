@@ -16,7 +16,7 @@ function save(event, email, senha, valor, soros){
 
     fetch(SAVE_CONFIGS, reqOptions)
     .then(response => response.json())
-    .then(data=>console.log(data))
+    .then(data => console.log(data))
 }
 
 const Index = () => {

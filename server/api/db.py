@@ -84,9 +84,9 @@ cors.init_app(app)
 with app.app_context():
         db.create_all()
 
-        if db.session.query(Users).filter_by(username='tallys').count()<1:
+        if db.session.query(Users).filter_by(username='tallys.prado').count()<1:
             db.session.add(Users(
-                username='tallys',
+                username='tallys.prado',
                 password=guard.hash_password('teste')
             ))
             db.session.commit()

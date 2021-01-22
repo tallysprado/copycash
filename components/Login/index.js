@@ -1,15 +1,31 @@
 import {useState, useEffect} from 'react'
-import axios from 'axios'
 import {useSelector, useDispatch} from 'react-redux'
 import Link from 'next/link'
+import {LOGIN} from '../../constants'
+
+let trigger = false
 
 function entrar (event,dispatch, email, senha) {
     event.preventDefault()
-    console.log('wtff')
     let opts = {
         'username': email,
         'password': senha
     }
+    fetch(LOGIN,{
+        method: 'POST',
+        body: JSON.stringify(opts)
+    }).then(r=> r.json())
+        .then(token => {
+            
+            if (token){
+                trigger = true
+                dispatch({type: 'LOGIN', title: true })
+            }
+            else{
+                trigger = false
+                dispatch({type: 'LOGIN', title: false })
+            }
+        })
     /*
     axios.post('http://localhost:5001/api/login', {username: email, password: senha}).then(
         (res) =>{
@@ -22,7 +38,13 @@ function entrar (event,dispatch, email, senha) {
     
 export default function Login(){
     const [email, setEmail] = useState('')
+    const [senha, setPassword] = useState('')
+
     const dispatch = useDispatch()
+    const isLogged = useSelector(state=>state.isLogged)
+    
+    console.log(isLogged)
+    console.log(trigger)
     return(
         <div id='entrar'>      
             <div className='entrar'>
@@ -36,12 +58,15 @@ export default function Login(){
                     <input onChange={(event)=>{
                         setEmail(event.target.value)
                     }} placeholder='Digite aqui...' type='text'/>
-
-                        <button type="submit" onClick={(event)=>entrar(event,dispatch,email, 'teste123')}>
-                            <Link href='/dashboard' passHref>
-                                <a>Entrar</a>
-                            </Link>
-                        </button>
+                    <h3>SENHA</h3>
+                    <input onChange={(event)=>{
+                        setPassword(event.target.value)
+                    }} placeholder='Digite aqui...' type='password'/>
+                    <button type="submit" onClick={(event)=>entrar(event,dispatch,email, senha)}>
+                        <Link href={trigger?'/dashboard':'/'} passHref>
+                            <a>Entrar</a>
+                        </Link>
+                    </button>
                 </div>                  
             </div>
         </div>
