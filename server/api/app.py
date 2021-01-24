@@ -25,7 +25,8 @@ db = SQLAlchemy()
 guard.init_app(app,Users)
 db.init_app(app)
 
-CORS(app, resouces={r"/*": {"origins": "http://localhost:5000"}})
+#CORS(app, resouces={r"/*": {"origins": "http://localhost:5000"}})
+cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action):
     print('thread')
@@ -60,7 +61,7 @@ def buy():
     return {'Resultado':'Comprado!'}
 
 @app.route("/api/login", methods=['POST'])
-@cross_origin(origin='localhost',headers=['Content-Type','Authorization'])
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def login():
     data = request.get_json(force=True)
     username=data.get('username', None)
