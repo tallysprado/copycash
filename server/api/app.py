@@ -62,7 +62,7 @@ def buy():
     return {'Resultado':'Comprado!'}
 
 @app.route("/api/login", methods=['POST'])
-@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+@cors_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def login():
     data = request.get_json(force=True)
     username=data.get('username', None)
