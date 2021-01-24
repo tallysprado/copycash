@@ -17,7 +17,7 @@ app.config['JWT_REFRESH_LIFESPAN'] = {'days':30}
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 
-cors = CORS()
+cors = CORS(app, resouces={r"/*": {"origins": "*"}})
 guard = flask_praetorian.Praetorian()
 cors.init_app(app)
 db = SQLAlchemy()
@@ -25,8 +25,8 @@ db = SQLAlchemy()
 guard.init_app(app,Users)
 db.init_app(app)
 
-#CORS(app, resouces={r"/*": {"origins": "http://localhost:5000"}})
-cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
+
+#cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action):
     print('thread')
