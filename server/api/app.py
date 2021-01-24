@@ -15,6 +15,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'segredo de estado'
 app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 24}
 app.config['JWT_REFRESH_LIFESPAN'] = {'days':30}
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 cors = CORS()
 guard = flask_praetorian.Praetorian()
@@ -24,8 +25,7 @@ db = SQLAlchemy()
 guard.init_app(app,Users)
 db.init_app(app)
 
-CORS(app, resouces={r"/*": {"origins": "*"},
-r"/api/*": {"origins":"*"}})
+CORS(app, resouces={r"/*": {"origins": "*"}})
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action):
     print('thread')
@@ -38,6 +38,11 @@ def buy_thread(email, senha, paridade, tipo, expiracao, action):
         return
     else:
         return 0
+
+@app.route("/")
+@cross_origin()
+def index():
+    return "Hello, cross-origin-world"
 
 @app.route("/buy", methods=['POST'])
 def buy():
