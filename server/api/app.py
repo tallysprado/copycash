@@ -12,10 +12,10 @@ from multiprocessing import Process
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tallys:teste123@localhost:5432/longdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = 'segredo de estado'
 app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 24}
 app.config['JWT_REFRESH_LIFESPAN'] = {'days':30}
 app.config['CORS_HEADERS'] = 'Content-Type'
+app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 
 cors = CORS()
 guard = flask_praetorian.Praetorian()
@@ -25,7 +25,7 @@ db = SQLAlchemy()
 guard.init_app(app,Users)
 db.init_app(app)
 
-CORS(app, resouces={r"/*": {"origins": "*"}})
+CORS(app, resouces={r"/*": {"origins": "http://localhost:5000"}})
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action):
     print('thread')
@@ -39,10 +39,6 @@ def buy_thread(email, senha, paridade, tipo, expiracao, action):
     else:
         return 0
 
-@app.route("/")
-@cross_origin()
-def index():
-    return "Hello, cross-origin-world"
 
 @app.route("/buy", methods=['POST'])
 def buy():
