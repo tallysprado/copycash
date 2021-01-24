@@ -17,9 +17,10 @@ app.config['JWT_REFRESH_LIFESPAN'] = {'days':30}
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 
-cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
+#cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
+#cors.init_app(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 guard = flask_praetorian.Praetorian()
-cors.init_app(app)
 db = SQLAlchemy()
 
 guard.init_app(app,Users)
