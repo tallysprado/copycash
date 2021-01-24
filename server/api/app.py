@@ -24,7 +24,8 @@ db = SQLAlchemy()
 guard.init_app(app,Users)
 db.init_app(app)
 
-CORS(app, resouces={r"/*": {"origins": "*"}})
+CORS(app, resouces={r"/*": {"origins": "*"},
+r"/api/*": {"origins":"*"}})
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action):
     print('thread')
