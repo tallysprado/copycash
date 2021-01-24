@@ -6,15 +6,12 @@ import '../components/Login/styles.scss'
 import '../components/Card/styles.scss'
 
 
-import store from '../store'
-import {Provider} from 'react-redux'
+//import store from '../store'
+//import {Provider} from 'react-redux'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
-
+    <Component {...pageProps} />
   )
 }
 

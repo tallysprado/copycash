@@ -13,7 +13,7 @@ const titles = [
     "Entrar"
 ]
 
-const Index = () => {
+const Home = () => {
 
     const [title, setTitle] = useState("Copycash")
 
@@ -41,4 +41,4 @@ const Index = () => {
 )
 }
 
-export default Index;
+export default Home;

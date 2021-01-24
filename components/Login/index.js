@@ -2,10 +2,11 @@ import {useState, useEffect} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import Link from 'next/link'
 import {LOGIN} from '../../constants'
+import {useRouter} from 'next/router'
 
 let trigger = false
 
-function entrar (event,dispatch, email, senha) {
+function entrar (event, router, email, senha) {
     event.preventDefault()
     let opts = {
         'username': email,
@@ -17,13 +18,15 @@ function entrar (event,dispatch, email, senha) {
     }).then(r=> r.json())
         .then(token => {
             
-            if (token){
+            if (token.access_token){
                 trigger = true
-                dispatch({type: 'LOGIN', title: true })
+                router.push('/dashboard')
+                //dispatch({type: 'LOGIN', title: true })
             }
             else{
                 trigger = false
-                dispatch({type: 'LOGIN', title: false })
+                
+                //dispatch({type: 'LOGIN', title: false })
             }
         })
     /*
@@ -35,15 +38,15 @@ function entrar (event,dispatch, email, senha) {
     )
     */
 }
-    
-export default function Login(){
+
+const Login = ()=>{
     const [email, setEmail] = useState('')
     const [senha, setPassword] = useState('')
+    const router = useRouter()
 
-    const dispatch = useDispatch()
-    const isLogged = useSelector(state=>state.isLogged)
+    //const dispatch = useDispatch()
+    //const isLogged = useSelector(state=>state.isLogged)
     
-    console.log(isLogged)
     console.log(trigger)
     return(
         <div id='entrar'>      
@@ -62,13 +65,13 @@ export default function Login(){
                     <input onChange={(event)=>{
                         setPassword(event.target.value)
                     }} placeholder='Digite aqui...' type='password'/>
-                    <button type="submit" onClick={(event)=>entrar(event,dispatch,email, senha)}>
-                        <Link href={trigger?'/dashboard':'/'} passHref>
-                            <a>Entrar</a>
-                        </Link>
+                    <button type="submit" onClick={(event)=>entrar(event,router,email, senha)}>
+                        Entrar
                     </button>
                 </div>                  
             </div>
         </div>
     )
 }
+
+export default Login

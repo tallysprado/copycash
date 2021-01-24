@@ -5,6 +5,9 @@ from flask_cors import CORS
 from db import Users, Conta, Operacao
 from flask_sqlalchemy import SQLAlchemy
 import flask_praetorian
+import time
+from iqoptionapi.stable_api import IQ_Option
+from multiprocessing import Process
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tallys:teste123@localhost:5432/longdb'
@@ -23,10 +26,36 @@ db.init_app(app)
 
 CORS(app, resouces={r"/*": {"origins": "*"}})
 
+def buy_thread(email, senha, paridade, tipo, expiracao, action):
+    print('thread')
+    conta = IQ_Option(email, senha)
+    conta.connect()
+    conta.change_balance("PRACTICE")
+    check, id = conta.buy(10, paridade, action, expiracao)
+    if (check):
+        print(check)
+        return
+    else:
+        return 0
 
+@app.route("/buy", methods=['POST'])
+def buy():
+    data = request.get_json()
+    paridade = data['paridade']
+    tipo = data['tipo']
+    expiracao = int(data['expiracao'])
+    action = 'call' if data['direcao']=='CIMA' else 'put'
 
-api = API(email='fokrainsdetrosovisk@gmail.com', senha='Teste123')
-api.connect()
+    contas = Conta.query.all()
+    pool = []
+    for conta in contas:
+        p = Process(target=buy_thread, args=(conta.email, conta.senha, paridade, tipo, expiracao, action))
+        pool.append(p)
+    for p in pool:
+        print(p)
+        p.start()
+        
+    return {'Resultado':'Comprado!'}
 
 @app.route("/api/login", methods=['POST'])
 def login():
@@ -46,7 +75,6 @@ def refresh():
     ret = {'access_token': new_token}
 
     return ret,200
-    
 @app.route('/api/protected')
 @flask_praetorian.auth_required
 def protected():
@@ -58,30 +86,17 @@ def protected():
          -H "Authorization: Bearer <your_token>"
     """
     return {message: f'protected endpoint (allowed user {flask_praetorian.current_user().username})'}
-
-
-
+@app.route("/info", methods=['POST'])
+def info():
+    data = request.get_json()
 @app.route("/paridades")
 def paridades():
+    api = API()
+    api.connect()
     data = request.get_json()
     print(data)
     binary, digital = api.paridades()
     return {'binary': binary, 'digital': digital}
-
-@app.route("/buy", methods=['POST'])
-def buy():
-    data = request.get_json()
-    paridade = data['paridade']
-    tipo = data['tipo']
-    expiracao = data['expiracao']
-    direcao = data['direcao']
-
-    print( direcao, tipo, paridade, expiracao)
-    
-    check = api.buy(paridade,10, direcao, expiracao, tipo)
-
-    return {'Compra': check}
-
 @app.route("/config", methods=['POST'])
 def config():
     data = request.get_json()
@@ -89,17 +104,17 @@ def config():
     soros = data['soros']
     email = data['email']
     senha = data['senha']
-    
+    ret = False
     new_acc = Conta(email=email, senha=senha)
     new_op = Operacao(valor=int(valor), nivel=soros)
     new_acc.operacao.append(new_op)
     if db.session.query(Conta).filter_by(email=email).count()<1:
 
         db.session.add(new_acc)
-
+        ret = True
         db.session.commit()
     if db.session.query(Conta).filter_by(email=email).count()>=1:
-
+        ret = True
         conta = Conta.query.filter_by(email=email).first()
         print(conta)
         conta.senha = senha
@@ -109,7 +124,7 @@ def config():
 
     print(valor, soros, email, senha)
 
-    return {'Conta': conta}
+    return {'result': ret}
 
 
 if __name__ == "__main__":
