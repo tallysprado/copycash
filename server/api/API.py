@@ -34,7 +34,7 @@ class API:
                 digital.append(asset)
         
         return binary, digital
-
+    
     def connect_and_buy(self, email, senha, paridade, price, direcao, expiracao, tipo):
         conta = IQ_Option(email, senha)
         check, reason = conta.connect()

@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from API import API
 import os
 from flask_cors import CORS
-from db import Users, Conta, Operacao
+from models import Users, Conta, Operacao
 from flask_sqlalchemy import SQLAlchemy
 import flask_praetorian
 import time
@@ -29,17 +29,21 @@ db.init_app(app)
 
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 
-def buy_thread(email, senha, paridade, tipo, expiracao, action):
+def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
     print('thread')
     conta = IQ_Option(email, senha)
     conta.connect()
     conta.change_balance("PRACTICE")
-    check, id = conta.buy(10, paridade, action, expiracao)
-    if (check):
-        print(check)
-        return
-    else:
-        return 0
+    check = None
+    if (tipo=='BINÁRIA'):
+        check, id = conta.buy(valor, paridade, action, expiracao)
+        if check:
+            print('Ordem: ', check, id)
+    if (tipo=='DIGITAL'):
+        check, id = conta.buy_digital_spot(paridade, valor, action, expiracao)
+        if check:
+            print('Ordem: ', check, id)    
+    return check
 
 
 @app.route("/buy", methods=['POST'])
@@ -49,11 +53,21 @@ def buy():
     tipo = data['tipo']
     expiracao = int(data['expiracao'])
     action = 'call' if data['direcao']=='CIMA' else 'put'
-
+    valor = 10
     contas = Conta.query.all()
     pool = []
+    operacoes = Conta.query.join(Operacao,
+    Conta.id==Operacao.conta_id)\
+    .add_columns(Conta.email, Conta.senha, Operacao.valor,
+    Operacao.soros, Operacao.nivel)\
+    .filter(Conta.id == Operacao.id)\
+    .filter(Operacao.conta_id == Conta.id)\
+    .paginate(page=1, per_page=1)
+    for items in operacoes.items:
+        print(items.email, items.senha, items.valor)
+
     for conta in contas:
-        p = Process(target=buy_thread, args=(conta.email, conta.senha, paridade, tipo, expiracao, action))
+        p = Process(target=buy_thread, args=(conta.email, conta.senha, paridade, tipo, expiracao, action, valor))
         pool.append(p)
     for p in pool:
         print(p)
