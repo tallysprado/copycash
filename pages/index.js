@@ -16,7 +16,9 @@ const titles = [
 const Home = () => {
 
     const [title, setTitle] = useState("Copycash")
+    
 
+    
     useEffect(() =>{
         if(typeof window !== `undefined`){
             window.onscroll = function() {
@@ -26,7 +28,13 @@ const Home = () => {
                 setTitle(titles[index]);
             }
         }
-        
+        var input = document.getElementById("txtPass")
+        input.addEventListener("keyup", function(event){
+            if(event.keyCode===13){
+                event.preventDefault()
+                document.getElementById('btnSubmit').click()
+            }
+        })
     }, [])
 
     return (

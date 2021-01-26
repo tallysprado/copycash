@@ -1,7 +1,8 @@
 import {SAVE_CONFIGS} from '../../constants'
 import {useState, useEffect} from 'react'
+import Cookies from 'universal-cookie'
 
-function save(event, email, senha, valor, soros){
+function save(event, email, senha, valor, soros, user){
     event.preventDefault()
     const reqOptions = {
         method: 'POST',
@@ -10,7 +11,8 @@ function save(event, email, senha, valor, soros){
             email: email,
             senha: senha,
             valor: valor,
-            soros: soros
+            soros: soros,
+            username: user,
         })
     }
 
@@ -22,24 +24,22 @@ function save(event, email, senha, valor, soros){
 const Index = () => {
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
-    const [valor, setValor] = useState()
-    const [soros, setSoros] = useState()
-
+    const [valor, setValor] = useState(2)
+    const [soros, setSoros] = useState(0)
+    const cookies = new Cookies()
     useEffect(()=>{
         setValor(10)
         setSoros(0)
     },[])
-    
     return(
         <div id='config'>
             <p>Valor</p>
-            <input placeholder='R$'/>
+            <input onChange={(event)=>{setValor(event.target.value)}} 
+            type='number' min={2} placeholder='R$'/>
 
             <p>Soros</p>
-            <div>
-                <input type='number' placeholder='Nível' min={0}/>
-                <input className='check' type='checkbox'/>
-            </div>
+            <input onChange={(event)=>{setSoros(event.target.value)}} 
+            type='number' placeholder='0 para desativado' max={5} min={0}/>
 
             <p>E-mail</p>
             <input onChange={(event)=>setEmail(event.target.value)}
@@ -49,7 +49,7 @@ const Index = () => {
             type='password' placeholder='Senha IQ Option'/>
 
             <div className='buttons'>
-                <button onClick={(event)=>save(event, email, senha, valor, soros)}>Salvar</button>
+                <button onClick={(event)=>save(event, email, senha, valor, soros, cookies.get('username'))}>Salvar</button>
                 <button>Sair</button>
             </div>
 

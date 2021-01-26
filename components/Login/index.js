@@ -3,51 +3,41 @@ import {useSelector, useDispatch} from 'react-redux'
 import Link from 'next/link'
 import {LOGIN} from '../../constants'
 import {useRouter} from 'next/router'
+import Cookies from 'universal-cookie'
+import {parseCookies} from '../../helpers'
 
 let trigger = false
 
-function entrar (event, router, email, senha) {
-    event.preventDefault()
-    let opts = {
-        'username': email,
-        'password': senha
-    }
-    fetch(LOGIN,{
-        method: 'POST',
-        body: JSON.stringify(opts)
-    }).then(r=> r.json())
-        .then(token => {
-            
-            if (token.access_token){
-                trigger = true
-                router.push('/dashboard')
-                //dispatch({type: 'LOGIN', title: true })
-            }
-            else{
-                trigger = false
-                
-                //dispatch({type: 'LOGIN', title: false })
-            }
-        })
-    /*
-    axios.post('http://localhost:5001/api/login', {username: email, password: senha}).then(
-        (res) =>{
-            console.log(res.data.access_token)
-            dispatch({type: 'token', title: res.data.access_token})
-        }
-    )
-    */
-}
 
 const Login = ()=>{
     const [email, setEmail] = useState('')
     const [senha, setPassword] = useState('')
     const router = useRouter()
-
-    //const dispatch = useDispatch()
-    //const isLogged = useSelector(state=>state.isLogged)
-    
-    console.log(trigger)
+    const cookies = new Cookies()
+    const handleSignIn = async (event, router, email, senha) => {
+        event.preventDefault()
+        let opts = {
+            'username': email,
+            'password': senha
+        }
+        fetch(LOGIN,{
+            method: 'POST',
+            body: JSON.stringify(opts)
+        })
+        .then(r=> r.json())
+        .then(token => {
+            console.log(token.username)        
+            if (token.access_token){
+                trigger = true                
+                router.push('/dashboard')
+                cookies.set('username', token.username, {path: '/'})
+                //dispatch({type: 'LOGIN', title: true })
+            }
+            else{
+                trigger = false
+            }
+        })
+    }
     return(
         <div id='entrar'>      
             <div className='entrar'>
@@ -62,10 +52,10 @@ const Login = ()=>{
                         setEmail(event.target.value)
                     }} placeholder='Digite aqui...' type='text'/>
                     <h3>SENHA</h3>
-                    <input onChange={(event)=>{
+                    <input id='txtPass' onChange={(event)=>{
                         setPassword(event.target.value)
                     }} placeholder='Digite aqui...' type='password'/>
-                    <button type="submit" onClick={(event)=>entrar(event,router,email, senha)}>
+                    <button id='btnSubmit' onClick={(event)=>handleSignIn(event,router,email, senha)}>
                         Entrar
                     </button>
                 </div>                  
@@ -73,5 +63,6 @@ const Login = ()=>{
         </div>
     )
 }
+
 
 export default Login

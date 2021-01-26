@@ -12,8 +12,8 @@ from multiprocessing import Process
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tallys:teste123@localhost:5432/longdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 24}
-app.config['JWT_REFRESH_LIFESPAN'] = {'days':30}
+app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 1}
+app.config['JWT_REFRESH_LIFESPAN'] = {'days':1}
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 
@@ -64,11 +64,16 @@ def buy():
     .filter(Operacao.conta_id == Conta.id)\
     .paginate(page=1, per_page=1)
     for items in operacoes.items:
-        print(items.email, items.senha, items.valor)
-
+        p = Process(target=buy_thread, args=[
+            items.email, items.senha, paridade, tipo, expiracao, action,
+            items.valor
+        ])
+        pool.append(p)
+    '''
     for conta in contas:
         p = Process(target=buy_thread, args=(conta.email, conta.senha, paridade, tipo, expiracao, action, valor))
         pool.append(p)
+    '''
     for p in pool:
         print(p)
         p.start()
@@ -83,7 +88,7 @@ def login():
     password = data.get('password',None)
     print(username, password)
     users = guard.authenticate(username, password)
-    ret = {'access_token': guard.encode_jwt_token(users)}
+    ret = {'access_token': guard.encode_jwt_token(users), 'username': username}
 
     return ret,200
 @app.route("/api/refresh", methods=['POST'])
@@ -123,28 +128,29 @@ def config():
     soros = data['soros']
     email = data['email']
     senha = data['senha']
+    user = data['username']
     ret = False
     new_acc = Conta(email=email, senha=senha)
     new_op = Operacao(valor=int(valor), nivel=soros)
     new_acc.operacao.append(new_op)
     if db.session.query(Conta).filter_by(email=email).count()<1:
-
         db.session.add(new_acc)
         ret = True
         db.session.commit()
+
     if db.session.query(Conta).filter_by(email=email).count()>=1:
         ret = True
         conta = Conta.query.filter_by(email=email).first()
+        user = Users.query.filter_by(username=user).first()
+        user.conta_id = conta.id
         print(conta)
         conta.senha = senha
+        db.session.merge(user)
+        db.session.merge(conta)
         db.session.commit()
-
-    
-
     print(valor, soros, email, senha)
 
     return {'result': ret}
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5001)

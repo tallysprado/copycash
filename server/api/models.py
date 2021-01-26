@@ -14,8 +14,8 @@ cors = CORS()
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tallys:teste123@localhost:5432/longdb'
 app.config['SECRET_KEY'] = '_5#y2L"F4Q8z\xec]/'
-app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 24}
-app.config['JWT_REFRESH_LIFESPAN'] = {'days':30}
+app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 1}
+app.config['JWT_REFRESH_LIFESPAN'] = {'days':1}
 
 class Users(db.Model):
     __tablename__='users'

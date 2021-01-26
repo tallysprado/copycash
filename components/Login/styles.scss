@@ -37,7 +37,7 @@
         justify-content: center;
         display: flex;
     }
-    button {
+    button, .submit-button {
         background-color: var(--white);
         border: none;
         margin-top: 10px;
@@ -46,7 +46,7 @@
         margin-bottom: 25px;
     }
 
-    button:hover{
+    button:hover, .submit-button:hover{
         color: var(--white);
         background-color: black;
     }

@@ -13,17 +13,20 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.21.1",
+    "cookie": "^0.4.1",
     "fetch": "^1.1.0",
     "next": "10.0.5",
     "next-auth": "^3.1.0",
     "next-images": "^1.6.2",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
+    "react-cookie": "^4.0.3",
     "react-dom": "17.0.1",
     "react-player": "^2.7.2",
     "react-redux": "^7.2.2",
     "react-spring": "^8.0.27",
     "react-text-transition": "^1.1.4",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "universal-cookie": "^4.0.4"
   }
 }

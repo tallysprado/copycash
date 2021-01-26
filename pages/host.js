@@ -2,29 +2,30 @@ import {useState, useEffect} from 'react'
 import {BUY_URL, PAIR_URL} from '../constants'
 
 function send(event,paridade, expiracao, tipo, direcao){
-    event.preventDefault()
-    const reqOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            paridade: paridade,
-            expiracao: expiracao,
-            tipo: tipo,
-            direcao: direcao,
-        })
-    }
-
-    fetch(BUY_URL, reqOptions)
-        .then(response => response.json())
-        .then(data => console.log(data))
+    //if (prompt('Autorizar operação: ')==='1234'){
+        event.preventDefault()
+        const reqOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                paridade: paridade,
+                expiracao: expiracao,
+                tipo: tipo,
+                direcao: direcao,
+            })
+        }
+        fetch(BUY_URL, reqOptions)
+            .then(response => response.json())
+            .then(data => console.log(data))
+    //}
 }
 
 export default function Host(){
     const [ativos, setAtivos] = useState([''])
     const [paridade, setParidade] = useState()
-    const [expiracao, setExpiracao] = useState()
-    const [tipo, setTipo] = useState()
-    const [direcao, setDirecao] = useState()
+    const [expiracao, setExpiracao] = useState(1)
+    const [tipo, setTipo] = useState('BINÁRIA')
+    const [direcao, setDirecao] = useState('BAIXO')
 
     useEffect(()=>{
         async function loadData(){
@@ -33,11 +34,8 @@ export default function Host(){
             setAtivos(paridades)
         }
         loadData()
-        setTipo("BINÁRIA")    
-        setDirecao("BAIXO")
     }, [])
-    console.log(ativos.paridades)
-    
+
     return(
         <div id='host'>
             <div className='container'>
