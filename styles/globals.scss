@@ -3,13 +3,17 @@
   --orange: #FCA311;
   --white: #E5E5E5;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   background: url('../public/background1.jpg') no-repeat fixed;
   color: white;
   margin: 0px;
   padding: 0px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  overflow-x: hidden !important;
   background-attachment: fixed !important;
 }
 
@@ -74,6 +78,7 @@ div.content {
 
   body{
     background: url('../public/background1.jpg') no-repeat fixed;
+    background-attachment: fixed !important;
   }
   .mobile-hide{
     display: none !important;

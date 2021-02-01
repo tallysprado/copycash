@@ -2,15 +2,34 @@ import Navbar from '../components/Navbar'
 import Head from '../components/Head'
 import Card from '../components/Card'
 import { useState, useEffect } from "react"
+import Cookies from 'universal-cookie'
 
 const titles = [
     "Histórico",
     "Configurações",
 ]
 
-const Dashboard = () => {
-    const [title, setTitle] = useState("Histórico")
+export async function getStaticProps(){
+    const cookies = new Cookies()
+    let opts = {
+        username: cookies.get('username')
+    }
+    const res = await fetch('http://localhost:5000/get_config', {
+        method: 'POST',
+        body: JSON.stringify(opts)
+    })
+    const json = await res.json()
+    
+    return{
+        props: {
+            json
+        }
+    }
+}
 
+export default function Dashboard (props) {
+    const [title, setTitle] = useState("Histórico")
+    console.log(props)
     useEffect(() =>{
         if(typeof window !== `undefined`){
             window.onscroll = function() {
@@ -31,4 +50,3 @@ const Dashboard = () => {
         </div>
     )
 }
-export default Dashboard

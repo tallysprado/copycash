@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from API import API
 import os
 from flask_cors import CORS
-from models import Users, Conta, Operacao
+from models import Users, Conta, Operacao, Operacoes
 from flask_sqlalchemy import SQLAlchemy
 import flask_praetorian
 import time
@@ -22,29 +22,24 @@ app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 CORS(app, resources={r"/*": {"origins": "*"}})
 guard = flask_praetorian.Praetorian()
 db = SQLAlchemy()
-
 guard.init_app(app,Users)
 db.init_app(app)
-
-
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
-
 def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
-    print('thread')
     conta = IQ_Option(email, senha)
     conta.connect()
     conta.change_balance("PRACTICE")
-    check = None
     if (tipo=='BINÁRIA'):
         check, id = conta.buy(valor, paridade, action, expiracao)
         if check:
-            print('Ordem: ', check, id)
+            check
     if (tipo=='DIGITAL'):
         check, id = conta.buy_digital_spot(paridade, valor, action, expiracao)
         if check:
-            print('Ordem: ', check, id)    
-    return check
-
+            check
+    print(check, id)
+    time.sleep(1)
+    return 'error check'
 
 @app.route("/buy", methods=['POST'])
 def buy():
@@ -53,32 +48,45 @@ def buy():
     tipo = data['tipo']
     expiracao = int(data['expiracao'])
     action = 'call' if data['direcao']=='CIMA' else 'put'
-    valor = 10
-    contas = Conta.query.all()
     pool = []
     operacoes = Conta.query.join(Operacao,
     Conta.id==Operacao.conta_id)\
     .add_columns(Conta.email, Conta.senha, Operacao.valor,
-    Operacao.soros, Operacao.nivel)\
+    Operacao.nivel)\
     .filter(Conta.id == Operacao.id)\
     .filter(Operacao.conta_id == Conta.id)\
-    .paginate(page=1, per_page=1)
+    .paginate()
+    i = 0
     for items in operacoes.items:
         p = Process(target=buy_thread, args=[
             items.email, items.senha, paridade, tipo, expiracao, action,
             items.valor
         ])
+        print(items.email)
+        print(i)
         pool.append(p)
-    '''
-    for conta in contas:
-        p = Process(target=buy_thread, args=(conta.email, conta.senha, paridade, tipo, expiracao, action, valor))
-        pool.append(p)
-    '''
+        i+=1
     for p in pool:
-        print(p)
         p.start()
-        
-    return {'Resultado':'Comprado!'}
+
+
+    '''
+    operacao = Operacoes(tipo=tipo,direcao=action, expiracao=expiracao, paridade=paridade)
+    db.session.add(operacao)
+    db.session.commit()
+    '''
+
+    return {'Resultado':str(pool)}
+@app.route('/check_win', methods=['GET'])
+def check_win():
+    conta = IQ_Option("fokrainsdetrosovisk@gmail.com","Teste123")
+    conta.connect()
+    descending = Operacoes.query.order_by(Operacoes.id.desc())
+    last_item = descending.first()
+    
+    print(last_item.operation_id)
+
+    return {"last_operation": last_item.operation_id}, 200
 
 @app.route("/api/login", methods=['POST'])
 #@cors_origin(origin='localhost',headers=['Content- Type','Authorization'])
@@ -121,6 +129,30 @@ def paridades():
     print(data)
     binary, digital = api.paridades()
     return {'binary': binary, 'digital': digital}
+
+@app.route('/get_config', methods=['POST', 'GET'])
+def get_config():
+    data = request.get_json()
+    #username = data['username']
+    operacoes = Conta.query.join(Operacao,
+    Conta.id==Operacao.conta_id)\
+        .add_columns(Conta.email, Conta.senha, Operacao.valor,
+        Operacao.nivel)\
+            .filter(Conta.id == Operacao.id)\
+                .filter(Operacao.conta_id == Conta.id)\
+                    .paginate()
+
+    users = Users.query.join(Conta, Users.id==Conta.id)\
+        .add_columns(Users.username, Conta.email, Conta.senha)\
+            .filter(Users.id == Conta.id)\
+                .filter(Conta.id==Users.id).paginate()
+    
+    for item in operacoes.items:
+        print(item)
+        for user in users.items:
+            print(user[1])
+    return {'Operações':True}
+
 @app.route("/config", methods=['POST'])
 def config():
     data = request.get_json()
@@ -153,4 +185,4 @@ def config():
     return {'result': ret}
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5001)
+    app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5000)

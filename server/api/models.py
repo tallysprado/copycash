@@ -1,9 +1,10 @@
-from sqlalchemy import Boolean, String, Integer, Column, Text
+from sqlalchemy import DateTime,Boolean, String, Integer, Column, Text
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from flask_cors import CORS
 from flask_praetorian import Praetorian
 import os
+import datetime
 
 app = Flask(__name__)
 guard = Praetorian()
@@ -26,8 +27,7 @@ class Users(db.Model):
     conta_id = Column(Integer, db.ForeignKey('conta.id'))
     conta = db.relationship('Conta', backref='conta')
     is_active = Column(Boolean, default=True, server_default='true')
-    
-    
+
     @property
     def rolenames(self):
         try:
@@ -71,9 +71,19 @@ class Operacao(db.Model):
     __tablename__ = 'operacao'
     id = Column(Integer, primary_key=True)
     valor = Column(Integer, default=5)
-    soros = Column(String(3), default='1')
-    nivel = Column(Integer, default='2')
+    nivel = Column(Integer, default='0')
     conta_id = Column(Integer, db.ForeignKey('conta.id'))
+
+class Operacoes(db.Model):
+    __tablename__ = 'operacoes'
+    id = Column(Integer, primary_key=True)
+    data = Column(DateTime, default=datetime.datetime.utcnow)
+    direcao = Column(String(5), default='BAIXO')
+    paridade = Column(String(10))
+    expiracao = Column(Integer)
+    resultado = Column(String(4))
+    tipo = Column(String(8))
+    operation_id = Column(Integer)
 
 
 db.init_app(app)
