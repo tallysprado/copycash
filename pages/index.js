@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-
+import "isomorphic-fetch"
 import Head from '../components/Head'
 
 import Landing from '../components/Landing'
@@ -38,15 +38,15 @@ const Home = () => {
     }, [])
 
     return (
-    <>
-        <Head/>
-        <Navbar title={title}/>
-        <Landing/>
-        <Sobre/>
-        <Login/>
-        {/* <Projects/> */}
-    </>
-)
+        <>
+            <Head/>
+            <Navbar title={title}/>
+            <Landing/>
+            <Sobre/>
+            <Login/>
+            {/* <Projects/> */}
+        </>
+    )
 }
 
 export default Home;

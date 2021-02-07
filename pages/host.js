@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import {BUY_URL, PAIR_URL} from '../constants'
+import NextCors from 'nextjs-cors'
 
 function send(event,paridade, expiracao, tipo, direcao){
     //if (prompt('Autorizar operação: ')==='1234'){
@@ -20,7 +21,7 @@ function send(event,paridade, expiracao, tipo, direcao){
     //}
 }
 
-export default function Host(){
+const Host= () =>{
     const [ativos, setAtivos] = useState([''])
     const [paridade, setParidade] = useState()
     const [expiracao, setExpiracao] = useState(1)
@@ -33,7 +34,8 @@ export default function Host(){
             const paridades = await response.json()
             setAtivos(paridades)
         }
-        loadData()
+        
+
     }, [])
 
     return(
@@ -88,3 +90,28 @@ export default function Host(){
         </div>
     )
 }
+
+Host.getInitialProps = async () =>{
+    
+    const response = await fetch(
+        'https://api-sec-vlc.hotmart.com/security/oauth/token?grant_type=client_credentials&cliend_id=351b4237-4e99-4069-887f-7d0dd2701556&client_secret=0e457382-961c-4e74-acb9-de10d9432ea5',
+        {
+            method: "POST",
+            headers:{
+                'Content-Type': 'application/json',
+                'Authorization': 'Basic MzUxYjQyMzctNGU5OS00MDY5LTg4N2YtN2QwZGQyNzAxNTU2OjBlNDU3MzgyLTk2MWMtNGU3NC1hY2I5LWRlMTBkOTQzMmVhNQ=='
+            }
+        }
+        
+    )
+    const hotmart = await response.json()
+    console.log(hotmart)
+    console.log('funcao')
+    return {
+        props: {
+            hotmart
+        }
+    }
+}
+
+export default Host

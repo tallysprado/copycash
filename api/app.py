@@ -5,7 +5,7 @@ from flask_cors import CORS
 from models import Users, Conta, Operacao, Operacoes
 from flask_sqlalchemy import SQLAlchemy
 import flask_praetorian
-import time
+import time, json
 from iqoptionapi.stable_api import IQ_Option
 from multiprocessing import Process
 
@@ -27,18 +27,31 @@ db.init_app(app)
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
     conta = IQ_Option(email, senha)
-    conta.connect()
+    conta.set_max_reconnect(5)
     conta.change_balance("PRACTICE")
+    conta.connect()
+
+    while True:
+        if conta.check_connect()==False:
+            print('Erro, reconectando conta...')
+            conta.reconnect()
+        else:
+            print('Conectado em ', conta)
+            break
+        time.sleep(1)
+
     if (tipo=='BINÁRIA'):
         check, id = conta.buy(valor, paridade, action, expiracao)
         if check:
-            check
+            time.sleep(1)
+            return check
     if (tipo=='DIGITAL'):
         check, id = conta.buy_digital_spot(paridade, valor, action, expiracao)
         if check:
-            check
+            time.sleep(1)
+            return check
     print(check, id)
-    time.sleep(1)
+    
     return 'error check'
 
 @app.route("/buy", methods=['POST'])
@@ -56,20 +69,20 @@ def buy():
     .filter(Conta.id == Operacao.id)\
     .filter(Operacao.conta_id == Conta.id)\
     .paginate()
+    
+    print(paridade, tipo, expiracao, action)
     i = 0
     for items in operacoes.items:
         p = Process(target=buy_thread, args=[
             items.email, items.senha, paridade, tipo, expiracao, action,
             items.valor
         ])
-        print(items.email)
-        print(i)
         pool.append(p)
-        i+=1
+        time.sleep(1)
+        print('conta ', i)
+        i+=1        
     for p in pool:
         p.start()
-
-
     '''
     operacao = Operacoes(tipo=tipo,direcao=action, expiracao=expiracao, paridade=paridade)
     db.session.add(operacao)
@@ -94,9 +107,10 @@ def login():
     data = request.get_json(force=True)
     username=data.get('username', None)
     password = data.get('password',None)
+    id = data.get('id',None)
     print(username, password)
     users = guard.authenticate(username, password)
-    ret = {'access_token': guard.encode_jwt_token(users), 'username': username}
+    ret = {'access_token': guard.encode_jwt_token(users), 'id': id}
 
     return ret,200
 @app.route("/api/refresh", methods=['POST'])

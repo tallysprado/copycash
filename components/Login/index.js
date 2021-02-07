@@ -5,8 +5,11 @@ import {LOGIN} from '../../constants'
 import {useRouter} from 'next/router'
 import Cookies from 'universal-cookie'
 import {parseCookies} from '../../helpers'
+import 'isomorphic-fetch'
 
 let trigger = false
+
+
 
 
 const Login = ()=>{
@@ -14,6 +17,9 @@ const Login = ()=>{
     const [senha, setPassword] = useState('')
     const router = useRouter()
     const cookies = new Cookies()
+    
+   
+
     const handleSignIn = async (event, router, email, senha) => {
         event.preventDefault()
         let opts = {
@@ -29,7 +35,9 @@ const Login = ()=>{
             console.log(token.username)        
             if (token.access_token){
                 trigger = true                
-                router.push('/dashboard')
+                console.log(token.id)
+
+                router.push('dashboard')
                 cookies.set('username', token.username, {path: '/'})
                 //dispatch({type: 'LOGIN', title: true })
             }

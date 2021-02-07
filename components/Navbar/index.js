@@ -21,6 +21,7 @@ const buttons = [
     label: "Entrar",
     view: "entrar",
   },
+  
 ];
 
 const MenuAnimation = Keyframes.Spring({

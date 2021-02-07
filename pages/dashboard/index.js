@@ -1,14 +1,16 @@
-import Navbar from '../components/Navbar'
-import Head from '../components/Head'
-import Card from '../components/Card'
+import Navbar from '../../components/Navbar'
+import Head from '../../components/Head'
+import Card from '../../components/Card'
 import { useState, useEffect } from "react"
 import Cookies from 'universal-cookie'
+import withAuth from '../../helpers/WithAuth'
+import {withRouter} from 'next/router'
 
 const titles = [
     "Histórico",
     "Configurações",
 ]
-
+const isLoggedIn = false
 export async function getStaticProps(){
     const cookies = new Cookies()
     let opts = {
@@ -19,15 +21,15 @@ export async function getStaticProps(){
         body: JSON.stringify(opts)
     })
     const json = await res.json()
-    
     return{
         props: {
-            json
+            json,
+            isLoggedIn
         }
     }
 }
 
-export default function Dashboard (props) {
+const Dashboard = (props) => {
     const [title, setTitle] = useState("Histórico")
     console.log(props)
     useEffect(() =>{
@@ -50,3 +52,5 @@ export default function Dashboard (props) {
         </div>
     )
 }
+
+export default Dashboard
