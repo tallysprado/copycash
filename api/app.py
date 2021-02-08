@@ -100,7 +100,10 @@ def login():
     id = data.get('id',None)
     print(username, password)
     users = guard.authenticate(username, password)
-    ret = {'access_token': guard.encode_jwt_token(users), 'id': id}
+    ret = {
+        'access_token': guard.encode_jwt_token(users),
+        'username': username
+    }
 
     return ret,200
 @app.route("/api/refresh", methods=['POST'])
@@ -121,7 +124,10 @@ def protected():
        $ curl http://localhost:5000/api/protected -X GET \
          -H "Authorization: Bearer <your_token>"
     """
-    return {'user': flask_praetorian.current_user().username}
+    return {
+        'User': flask_praetorian.current_user().username,
+        'Roles': flask_praetorian.current_user().rolenames
+    }
 @app.route("/paridades")
 def paridades():
     api = API()

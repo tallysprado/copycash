@@ -98,6 +98,11 @@ with app.app_context():
             db.session.add(Users(
                 username='tallys.prado',
                 password=guard.hash_password('teste'),
+                roles='user'
+            ))
+            db.session.add(Users(
+                username='user2',
+                password=guard.hash_password('teste'),
                 roles='admin'
             ))
             db.session.commit()

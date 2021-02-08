@@ -5,7 +5,7 @@
     div.background{
         width: 50%;
         height: calc(100vh);
-        background-image: url('../../public/background.png');
+        background-image: url('../../public/soldiers.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -15,22 +15,17 @@
         background-color: black;
         display: flex;
         flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
+        align-items: center;
         width: 50vw;
         height: 100vh;
     }
     h3{
-        
-        margin-left: 20px;
-        margin-top: 10vw;
         color: var(--white);
-        font-size: 2em;
+        font-size: 2em !important;
     }
     p{
-        margin-left: 20px;
         text-align: left;
         width: 80vh;
-        font-size: 1.1em;
+        font-size: 1.2em !important; 
     }
 }

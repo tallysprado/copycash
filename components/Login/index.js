@@ -7,7 +7,6 @@ import Cookies from 'universal-cookie'
 import {parseCookies} from '../../helpers'
 import 'isomorphic-fetch'
 
-let trigger = false
 
 const Login = ()=>{
     const [email, setEmail] = useState('')
@@ -17,9 +16,7 @@ const Login = ()=>{
     
     const handleSignIn = async (event, router, email, senha) => {
         event.preventDefault()
-        if(email=='tallys.prado2' && senha=='teste'){
-            router.push('/host')
-        }
+
         let opts = {
             'username': email,
             'password': senha
@@ -32,12 +29,19 @@ const Login = ()=>{
         .then(token => {
             console.log(token.username)        
             if (token.access_token){
-                trigger = true                
-                console.log(token.id)
-
-                router.push('dashboard')
-                cookies.set('token', token.access_token, {path: '/'})
+                trigger = true
+                console.log(token)
+                if(token.username=='user2'){
+                    router.push({
+                        pathname:'/host',
+                        query: { login:'true' }
+                    })
+                }                
+                else{
+                    router.push('/dashboard')
+                }
                 cookies.set('username', token.username, {path: '/'})
+
                 //dispatch({type: 'LOGIN', title: true })
             }
             else{

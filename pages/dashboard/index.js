@@ -16,7 +16,6 @@ export async function getStaticProps(){
     let opts = {
         username: cookies.get('username')
     }
-    console.log(cookies.get('token'))
     const token = await fetch('http://localhost:5000/api/protected',{
         method: 'GET',
         headers: {
