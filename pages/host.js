@@ -1,9 +1,8 @@
 import {useState, useEffect} from 'react'
 import {BUY_URL, PAIR_URL} from '../constants'
-import NextCors from 'nextjs-cors'
 
 function send(event,paridade, expiracao, tipo, direcao){
-    //if (prompt('Autorizar operação: ')==='1234'){
+    if (prompt('Autorizar operação: ')==='11'){
         event.preventDefault()
         const reqOptions = {
             method: 'POST',
@@ -18,10 +17,10 @@ function send(event,paridade, expiracao, tipo, direcao){
         fetch(BUY_URL, reqOptions)
             .then(response => response.json())
             .then(data => console.log(data))
-    //}
+    }
 }
 
-const Host= () =>{
+const Host= ({subscribers}) =>{
     const [ativos, setAtivos] = useState([''])
     const [paridade, setParidade] = useState()
     const [expiracao, setExpiracao] = useState(1)
@@ -34,9 +33,9 @@ const Host= () =>{
             const paridades = await response.json()
             setAtivos(paridades)
         }
-        
-
+        loadData()
     }, [])
+    console.log(subscribers)
 
     return(
         <div id='host'>
@@ -101,15 +100,25 @@ Host.getInitialProps = async () =>{
                 'Content-Type': 'application/json',
                 'Authorization': 'Basic MzUxYjQyMzctNGU5OS00MDY5LTg4N2YtN2QwZGQyNzAxNTU2OjBlNDU3MzgyLTk2MWMtNGU3NC1hY2I5LWRlMTBkOTQzMmVhNQ=='
             }
-        }
-        
+        }    
     )
-    const hotmart = await response.json()
-    console.log(hotmart)
-    console.log('funcao')
+    const data = await response.json()
+    
+    const subscribers = await fetch(
+        'https://sandbox.hotmart.com/payments/api/v1/subscriptions?status=CANCELLED_BY_SELLER&status=ACTIVE',
+        {
+            method: "GET",
+            headers: {
+                'Content-Type':'application/json',
+                'Authorization': 'Bearer '+data.access_token
+            }
+        }
+    )
+    console.log(subscribers)
     return {
         props: {
-            hotmart
+            data,
+            subscribers
         }
     }
 }

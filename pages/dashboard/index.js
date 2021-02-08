@@ -16,6 +16,14 @@ export async function getStaticProps(){
     let opts = {
         username: cookies.get('username')
     }
+    console.log(cookies.get('token'))
+    const token = await fetch('http://localhost:5000/api/protected',{
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer '+cookies.get('token')
+        }
+    })
+    const tokenData = await token.json()
     const res = await fetch('http://localhost:5000/get_config', {
         method: 'POST',
         body: JSON.stringify(opts)
@@ -24,14 +32,14 @@ export async function getStaticProps(){
     return{
         props: {
             json,
-            isLoggedIn
+            isLoggedIn,
+            tokenData
         }
     }
 }
 
-const Dashboard = (props) => {
+const Dashboard = ({tokenData}) => {
     const [title, setTitle] = useState("Histórico")
-    console.log(props)
     useEffect(() =>{
         if(typeof window !== `undefined`){
             window.onscroll = function() {
@@ -41,11 +49,15 @@ const Dashboard = (props) => {
                 setTitle(titles[index]);
             }
         }
-        
+        console.log(tokenData)
+
     }, [])
 
     return(
         <div id='dashboard'>
+            {
+
+            }
             <Head/>
             <Card title='Conta' history/>
             <Card title='Configurações' config/>

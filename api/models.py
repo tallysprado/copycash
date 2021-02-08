@@ -97,6 +97,7 @@ with app.app_context():
         if db.session.query(Users).filter_by(username='tallys.prado').count()<1:
             db.session.add(Users(
                 username='tallys.prado',
-                password=guard.hash_password('teste')
+                password=guard.hash_password('teste'),
+                roles='admin'
             ))
             db.session.commit()

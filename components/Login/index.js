@@ -9,19 +9,17 @@ import 'isomorphic-fetch'
 
 let trigger = false
 
-
-
-
 const Login = ()=>{
     const [email, setEmail] = useState('')
     const [senha, setPassword] = useState('')
     const router = useRouter()
     const cookies = new Cookies()
     
-   
-
     const handleSignIn = async (event, router, email, senha) => {
         event.preventDefault()
+        if(email=='tallys.prado2' && senha=='teste'){
+            router.push('/host')
+        }
         let opts = {
             'username': email,
             'password': senha
@@ -38,6 +36,7 @@ const Login = ()=>{
                 console.log(token.id)
 
                 router.push('dashboard')
+                cookies.set('token', token.access_token, {path: '/'})
                 cookies.set('username', token.username, {path: '/'})
                 //dispatch({type: 'LOGIN', title: true })
             }

@@ -27,19 +27,9 @@ db.init_app(app)
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
     conta = IQ_Option(email, senha)
-    conta.set_max_reconnect(5)
-    conta.change_balance("PRACTICE")
     conta.connect()
-
-    while True:
-        if conta.check_connect()==False:
-            print('Erro, reconectando conta...')
-            conta.reconnect()
-        else:
-            print('Conectado em ', conta)
-            break
-        time.sleep(1)
-
+    conta.change_balance("PRACTICE")
+    
     if (tipo=='BINÁRIA'):
         check, id = conta.buy(valor, paridade, action, expiracao)
         if check:
@@ -131,10 +121,7 @@ def protected():
        $ curl http://localhost:5000/api/protected -X GET \
          -H "Authorization: Bearer <your_token>"
     """
-    return {message: f'protected endpoint (allowed user {flask_praetorian.current_user().username})'}
-@app.route("/info", methods=['POST'])
-def info():
-    data = request.get_json()
+    return {'user': flask_praetorian.current_user().username}
 @app.route("/paridades")
 def paridades():
     api = API()
