@@ -25,6 +25,9 @@ db = SQLAlchemy()
 guard.init_app(app,Users)
 db.init_app(app)
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
+@app.route("/")
+def hello():
+    return "Hello, world"
 def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
     conta = IQ_Option(email, senha)
     conta.connect()
