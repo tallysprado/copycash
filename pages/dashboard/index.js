@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import Cookies from 'universal-cookie'
 import withAuth from '../../helpers/WithAuth'
 import {withRouter} from 'next/router'
-import {BASE_URL} from '../../constants'
+import BASE_URL from '../../constants'
 
 const titles = [
     "Histórico",
@@ -47,9 +47,6 @@ const Dashboard = () => {
 
     return(
         <div id='dashboard'>
-            {
-
-            }
             <Head/>
             <Card title='Conta' history/>
             <Card title='Configurações' config/>
