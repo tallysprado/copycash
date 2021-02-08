@@ -17,13 +17,7 @@ export async function getStaticProps(){
     let opts = {
         username: cookies.get('username')
     }
-    const token = await fetch(BASE_URL+"/api/protected",{
-        method: 'GET',
-        headers: {
-            'Authorization': 'Bearer '+cookies.get('token')
-        }
-    })
-    const tokenData = await token.json()
+    
     const res = await fetch(BASE_URL+'/get_config', {
         method: 'POST',
         body: JSON.stringify(opts)
@@ -33,12 +27,11 @@ export async function getStaticProps(){
         props: {
             json,
             isLoggedIn,
-            tokenData
         }
     }
 }
 
-const Dashboard = ({tokenData}) => {
+const Dashboard = () => {
     const [title, setTitle] = useState("Histórico")
     useEffect(() =>{
         if(typeof window !== `undefined`){
@@ -49,7 +42,6 @@ const Dashboard = ({tokenData}) => {
                 setTitle(titles[index]);
             }
         }
-        console.log(tokenData)
 
     }, [])
 
