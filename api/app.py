@@ -197,4 +197,5 @@ def config():
 if __name__ == "__main__":
     #app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5000)
     #app.run(ssl_context='adhoc', debug=os.getenv("DEBUG"), port=5000)
-    app.run()
+    from waitress import serve
+    serve(app,host="0.0.0.0",port="8080")
