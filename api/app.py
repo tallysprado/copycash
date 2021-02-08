@@ -19,7 +19,7 @@ app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 #cors.init_app(app)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://35.199.92.216:8080"}})
 guard = flask_praetorian.Praetorian()
 db = SQLAlchemy()
 guard.init_app(app,Users)
