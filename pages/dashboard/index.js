@@ -12,24 +12,6 @@ const titles = [
     "Configurações",
 ]
 const isLoggedIn = false
-export async function getStaticProps(){
-    const cookies = new Cookies()
-    let opts = {
-        username: cookies.get('username')
-    }
-    
-    const res = await fetch(BASE_URL+'/get_config', {
-        method: 'POST',
-        body: JSON.stringify(opts)
-    })
-    const json = await res.json()
-    return{
-        props: {
-            json,
-            isLoggedIn,
-        }
-    }
-}
 
 const Dashboard = () => {
     const [title, setTitle] = useState("Histórico")
