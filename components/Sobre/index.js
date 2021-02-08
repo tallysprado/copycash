@@ -15,7 +15,7 @@ const Index = () => {
                         Com tempo de tela de mais de 5 anos, Matheus Ladisgel está abrindo uma carteira
                         para operar na conta de 200 assinantes de variadas corretoras de Opções Binárias. 
                     </p>            
-                    <p>
+                    <p className='mobile-hide'>
                         É esse cara aqui quem vai botar pra quebrar <del>a banca</del> na tua conta!
                         Confia pai que cê vai assinar um contrato pra deixar você e nóis seguro e tranquílo
                         pra gente operar e nois dois ganhar dinheiro.

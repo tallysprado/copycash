@@ -65,7 +65,6 @@
         flex-direction: column;
     }
     div.divider{
-        margin: 6vh;
         border-left: 6px solid var(--white);
         height: 200px; 
     }
@@ -75,8 +74,8 @@
 @media screen and (max-width: 768px){
     #entrar{
         display: block !important;
+        margin-top: 25vw;
         max-height: 100vh !important;
-        padding-top: 50vh;
         a:hover{
           color: var(--white);
         }

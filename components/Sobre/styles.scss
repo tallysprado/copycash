@@ -28,4 +28,26 @@
         width: 80vh;
         font-size: 1.2em !important; 
     }
+    @media screen and (max-width: 768px){
+        display: flex;
+        div.background{
+            background-repeat: no-repeat;
+            background-size: cover;    
+            
+        }
+        div.story{
+            background-color: black !important;
+        }
+        h3{
+            font-size: 1.5em !important;
+        }
+        p.mobile-hide{
+            display: none;
+        }
+        p{
+            margin-left: 0px!important;
+            width: 45vw !important;
+            font-size: 1em!important;    
+        }
+    }
 }

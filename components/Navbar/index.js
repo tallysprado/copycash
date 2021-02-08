@@ -19,7 +19,7 @@ const buttons = [
   },
   {
     label: "Entrar",
-    view: "entrar",
+    view: "divider",
   },
   
 ];

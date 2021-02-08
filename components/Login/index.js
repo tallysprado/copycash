@@ -51,12 +51,12 @@ const Login = ()=>{
     }
     return(
         <div id='entrar'>      
-            <div className='entrar'>
-                <div className='login'>
-                    <h2>Não tem a assinatura de nenhum pacote ainda? Aproveita logo a primeira turma de 30 participantes. Pressione o botão abaixo para adquirir o melhor robô de opções binárias do Brasil.</h2>
+            <div id='login-title' className='entrar'>
+                <div id='login-title' className='login'>
+                    <h2>Entre agora para a primeira turma! São apenas 200 participantes por conta da liquidez das corretoras.</h2>
                     <button>ADQUIRA JÁ!</button>  
                 </div>
-                <div className='divider'/>
+                <div id='divider'className='divider'/>
                 <div className='login'>
                     <h3>E-MAIL</h3>
                     <input onChange={(event)=>{
