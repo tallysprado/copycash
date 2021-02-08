@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import Cookies from 'universal-cookie'
 import withAuth from '../../helpers/WithAuth'
 import {withRouter} from 'next/router'
+import {BASE_URL} from '../../constants'
 
 const titles = [
     "Histórico",
@@ -16,14 +17,14 @@ export async function getStaticProps(){
     let opts = {
         username: cookies.get('username')
     }
-    const token = await fetch('http://localhost:5000/api/protected',{
+    const token = await fetch(BASE_URL+"/api/protected",{
         method: 'GET',
         headers: {
             'Authorization': 'Bearer '+cookies.get('token')
         }
     })
     const tokenData = await token.json()
-    const res = await fetch('http://localhost:5000/get_config', {
+    const res = await fetch(BASE_URL+'/get_config', {
         method: 'POST',
         body: JSON.stringify(opts)
     })
