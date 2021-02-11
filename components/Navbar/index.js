@@ -21,7 +21,6 @@ const buttons = [
     label: "Entrar",
     view: "divider",
   },
-  
 ];
 
 const MenuAnimation = Keyframes.Spring({
@@ -37,13 +36,12 @@ const MenuAnimation = Keyframes.Spring({
   },
 });
 
-
 const scrollToView = (view) => {
   document.getElementById(view) &&
-  document
-    .getElementById(view)
-    .scrollIntoView({ behavior: "smooth", block: "center" });
-}
+    document
+      .getElementById(view)
+      .scrollIntoView({ behavior: "smooth", block: "center" });
+};
 
 const Navbar = ({ title }) => {
   const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
@@ -93,21 +91,24 @@ const Navbar = ({ title }) => {
           state={mobileMenuOpened ? "in" : "out"}
           config={{ duration: 150 }}
         >
-        {
-        props => (
+          {(props) => (
             <div style={props} className="mobile mobile-menu blackbg">
-                <ul>
-                    {buttons.map((button) => {
-                    const { label, view } = button;
-                    return (
-                        <button key={view} role="link" onClick={() => scrollToView(view)}>
-                        <li>{label}</li>
-                        </button>
-                    );
-                    })}
-                </ul>
+              <ul>
+                {buttons.map((button) => {
+                  const { label, view } = button;
+                  return (
+                    <button
+                      key={view}
+                      role="link"
+                      onClick={() => scrollToView(view)}
+                    >
+                      <li>{label}</li>
+                    </button>
+                  );
+                })}
+              </ul>
             </div>
-        )}
+          )}
         </MenuAnimation>
       </nav>
     </div>

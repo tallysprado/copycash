@@ -1,19 +1,20 @@
-:root{
-  --blue1: #14213D;
-  --orange: #FCA311;
-  --white: #E5E5E5;
+:root {
+  --blue1: #14213d;
+  --orange: #fca311;
+  --white: #e5e5e5;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  background: url('../public/background1.jpg') no-repeat fixed;
+  background: url("../public/background1.jpg") no-repeat fixed;
   color: white;
   margin: 0px;
   padding: 0px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-attachment: fixed !important;
 }
 
@@ -51,23 +52,23 @@ div.content {
   display: none;
 }
 
-#dashboard{
+#dashboard {
   display: flex;
   flex-direction: row;
   width: 100vw;
   height: 100vh;
 }
 
-#host{
+#host {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  div{
+  div {
     margin: auto;
     padding: 30px;
   }
-  div.container{
+  div.container {
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -75,27 +76,21 @@ div.content {
 }
 
 @media screen and (max-width: 768px) {
-
-  body{
-    background: url('../public/background1.jpg') no-repeat fixed;
+  body {
+    background: url("../public/background1.jpg") no-repeat fixed;
     background-attachment: fixed !important;
   }
-  .mobile-hide{
+  .mobile-hide {
     display: none !important;
   }
-  
+
   .mobile {
     display: block;
   }
-  #dashboard{
+  #dashboard {
     display: block !important;
   }
-  #card{
-    
+  #card {
     display: block !important;
   }
-  
 }
-  
-
-

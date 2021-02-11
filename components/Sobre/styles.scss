@@ -1,53 +1,50 @@
-#sobre{
-    height: 100vh;
-    padding-top: 100px;
+#sobre {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  div.background {
+    width: 50%;
+    height: calc(100vh);
+    background-image: url("../../public/soldiers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div.story {
+    background-color: black;
     display: flex;
-    div.background{
-        width: 50%;
-        height: calc(100vh);
-        background-image: url('../../public/soldiers.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+  }
+  h3 {
+    color: var(--white);
+    font-size: 2em !important;
+  }
+  p {
+    text-align: left;
+    width: 80vh;
+    font-size: 1.2em !important;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    div.background {
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-    div.story{
-        
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50vw;
-        height: 100vh;
+    div.story {
+      background-color: black !important;
     }
-    h3{
-        color: var(--white);
-        font-size: 2em !important;
+    h3 {
+      font-size: 1.5em !important;
     }
-    p{
-        text-align: left;
-        width: 80vh;
-        font-size: 1.2em !important; 
+    p.mobile-hide {
+      display: none;
     }
-    @media screen and (max-width: 768px){
-        display: flex;
-        div.background{
-            background-repeat: no-repeat;
-            background-size: cover;    
-            
-        }
-        div.story{
-            background-color: black !important;
-        }
-        h3{
-            font-size: 1.5em !important;
-        }
-        p.mobile-hide{
-            display: none;
-        }
-        p{
-            margin-left: 0px!important;
-            width: 45vw !important;
-            font-size: 1em!important;    
-        }
+    p {
+      margin-left: 0px !important;
+      width: 45vw !important;
+      font-size: 1em !important;
     }
+  }
 }

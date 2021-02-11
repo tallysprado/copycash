@@ -1,110 +1,109 @@
-#entrar{
-    height: 100vh;
+#entrar {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: white;
+  }
+  div.entrar {
     display: flex;
     justify-content: center;
     align-items: center;
-    h3{
-        
-        color: white;
-    }
-    div.entrar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        flex-direction: row;
-        background-color: rgba(0,0,0,0.8);
-        width: 100vw;
-        margin: auto;
-    }
+    height: auto;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    margin: auto;
+  }
 
-    h2{
-        font-size: 1.2em;    
-        color: var(--white);
-        width: 50vh;
-        text-align: end;
-    }
+  h2 {
+    font-size: 1.2em;
+    color: var(--white);
+    width: 50vh;
+    text-align: end;
+  }
 
-    div{
-        margin: 20px;
-    }
-    a:hover{
-        color: var(--white);
-    }
-    a{
-        color: black;
-        text-decoration: none;
-        justify-content: center;
-        display: flex;
-    }
-    button, .submit-button {
-        background-color: var(--white);
-        border: none;
-        margin-top: 10px;
-        padding: 24px 0px;
-        transition: background-color 0.4s;
-        margin-bottom: 25px;
-    }
+  div {
+    margin: 20px;
+  }
+  a:hover {
+    color: var(--white);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+  }
+  button,
+  .submit-button {
+    background-color: var(--white);
+    border: none;
+    margin-top: 10px;
+    padding: 24px 0px;
+    transition: background-color 0.4s;
+    margin-bottom: 25px;
+  }
 
-    button:hover, .submit-button:hover{
-        color: var(--white);
-        background-color: black;
-    }
-   
-    input{
-        padding: 24px 0px; 
-    }
-    div.buy-info{
-        align-items: stretch;
-        display: flex;
-        flex-direction: column;
-    }
-    div.login{
-        align-items: stretch;
-        display: flex;
-        flex-direction: column;
-    }
-    div.divider{
-        border-left: 6px solid var(--white);
-        height: 200px; 
-    }
-    
+  button:hover,
+  .submit-button:hover {
+    color: var(--white);
+    background-color: black;
+  }
+
+  input {
+    padding: 24px 0px;
+  }
+  div.buy-info {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  div.login {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  div.divider {
+    border-left: 6px solid var(--white);
+    height: 200px;
+  }
 }
 
-@media screen and (max-width: 768px){
-    #entrar{
-        display: block !important;
-        margin-top: 25vw;
-        max-height: 100vh !important;
-        a:hover{
-          color: var(--white);
-        }
-        a{
-            color: black;
-            text-decoration: none;
-            justify-content: center;
-            display: flex;
-        }
-        div.entrar{
-          display: block !important;
-          text-align: center !important;
-          align-items: center !important;
-          justify-content: center !important;
-          h2{
-            justify-self: center;
-            align-self: center;
-            width: 50vh;
-            text-align: center !important;
-          }
-          button.comprar{
-            width: 100vw !important;
-          }
-        
-        }
-        div.divider{
-          border-left: 0 !important;
-          height: 0vw !important;
-          border-bottom: 6px solid var(--white);
-        }
+@media screen and (max-width: 768px) {
+  #entrar {
+    display: block !important;
+    margin-top: 25vw;
+    max-height: 100vh !important;
+    a:hover {
+      color: var(--white);
     }
+    a {
+      color: black;
+      text-decoration: none;
+      justify-content: center;
+      display: flex;
+    }
+    div.entrar {
+      display: block !important;
+      text-align: center !important;
+      align-items: center !important;
+      justify-content: center !important;
+      h2 {
+        justify-self: center;
+        align-self: center;
+        width: 50vh;
+        text-align: center !important;
+      }
+      button.comprar {
+        width: 100vw !important;
+      }
+    }
+    div.divider {
+      border-left: 0 !important;
+      height: 0vw !important;
+      border-bottom: 6px solid var(--white);
+    }
+  }
 }
