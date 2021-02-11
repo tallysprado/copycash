@@ -106,3 +106,5 @@ with app.app_context():
                 roles='admin'
             ))
             db.session.commit()
+
+
