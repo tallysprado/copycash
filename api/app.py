@@ -9,6 +9,12 @@ import time
 import json
 from iqoptionapi.stable_api import IQ_Option
 from multiprocessing import Process
+from OpenSSL import SSL
+
+context = SSL.Context(SSL.PROTOCOL_TLSv1_2)
+context.use_privatekey_file('server.key')
+context.use_certificate_file('server.crt')   
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tallys:teste123@localhost:5432/longdb'
@@ -215,5 +221,4 @@ if __name__ == "__main__":
     #app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5000)
     #app.run(ssl_context='adhoc', debug=os.getenv("DEBUG"), port=5000)
     from waitress import serve
-    app.debug=True
-    serve(app, host="0.0.0.0", port="8080")
+    serve(app, host="0.0.0.0", port="8080", debug=True, ssl_context=context)
