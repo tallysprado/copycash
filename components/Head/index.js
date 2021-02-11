@@ -15,6 +15,9 @@ const HeadComponent = () => {
         property="og:image"
         content="https://i.ibb.co/b5rk9WL/logo.png"
       />
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+
+
     </Head>
   );
 };
