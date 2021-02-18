@@ -212,11 +212,12 @@ def config():
 
     return {'result': ret}
  
-context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER) 
-context.load_cert_chain('certificate.crt', 'private.key')  
+#context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER) 
+#context.load_cert_chain('certificate.crt', 'private.key')  
 if __name__ == "__main__":
     #app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5000)
     #app.run(ssl_context='adhoc', debug=os.getenv("DEBUG"), port=5000)
     from waitress import serve
     #serve(app, host="0.0.0.0", port="8080", url_scheme='https')
-    app.run(host='127.0.0.1', debug=True, ssl_context=context)
+    #app.run(host='127.0.0.1',port='8080', debug=True, ssl_context='adhoc')
+    app.run(threaded=True,host='0.0.0.0')

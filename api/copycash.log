@@ -1,0 +1,456 @@
+*** Starting uWSGI 2.0.18-debian (64bit) on [Mon Feb 15 18:30:26 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 31679
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 2204)
+spawned uWSGI worker 1 (pid: 2205, cores: 1)
+spawned uWSGI worker 2 (pid: 2206, cores: 1)
+spawned uWSGI worker 3 (pid: 2207, cores: 1)
+spawned uWSGI worker 4 (pid: 2208, cores: 1)
+spawned uWSGI worker 5 (pid: 2209, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.18-debian (64bit) on [Mon Feb 15 22:22:02 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 31679
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 511)
+spawned uWSGI worker 1 (pid: 599, cores: 1)
+spawned uWSGI worker 2 (pid: 600, cores: 1)
+spawned uWSGI worker 3 (pid: 601, cores: 1)
+spawned uWSGI worker 4 (pid: 602, cores: 1)
+spawned uWSGI worker 5 (pid: 603, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 0 seconds
+worker 4 buried after 0 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.18-debian (64bit) on [Mon Feb 15 23:08:29 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 31679
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 511)
+spawned uWSGI worker 1 (pid: 599, cores: 1)
+spawned uWSGI worker 2 (pid: 600, cores: 1)
+spawned uWSGI worker 3 (pid: 601, cores: 1)
+spawned uWSGI worker 4 (pid: 602, cores: 1)
+spawned uWSGI worker 5 (pid: 603, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.18-debian (64bit) on [Wed Feb 17 12:49:55 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 31679
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 523)
+spawned uWSGI worker 1 (pid: 654, cores: 1)
+spawned uWSGI worker 2 (pid: 655, cores: 1)
+spawned uWSGI worker 3 (pid: 656, cores: 1)
+spawned uWSGI worker 4 (pid: 657, cores: 1)
+spawned uWSGI worker 5 (pid: 658, cores: 1)
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 0 seconds
+worker 2 buried after 0 seconds
+worker 3 buried after 0 seconds
+worker 4 buried after 0 seconds
+worker 5 buried after 0 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.18-debian (64bit) on [Wed Feb 17 22:08:39 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 31679
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 503)
+spawned uWSGI worker 1 (pid: 596, cores: 1)
+spawned uWSGI worker 2 (pid: 597, cores: 1)
+spawned uWSGI worker 3 (pid: 598, cores: 1)
+spawned uWSGI worker 4 (pid: 599, cores: 1)
+spawned uWSGI worker 5 (pid: 600, cores: 1)
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+-- unavailable modifier requested: 0 --
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 02:54:13 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 7740
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 513)
+spawned uWSGI worker 1 (pid: 594, cores: 1)
+spawned uWSGI worker 2 (pid: 595, cores: 1)
+spawned uWSGI worker 3 (pid: 596, cores: 1)
+spawned uWSGI worker 4 (pid: 597, cores: 1)
+spawned uWSGI worker 5 (pid: 598, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 02:57:13 2021] ***
+compiled with version: 8.3.0 on 08 February 2021 21:53:20
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /home/tallys_prado/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7740
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56008fb857b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x56008fb857b0 pid: 877 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 877)
+spawned uWSGI worker 1 (pid: 881, cores: 1)
+spawned uWSGI worker 2 (pid: 882, cores: 1)
+spawned uWSGI worker 3 (pid: 883, cores: 1)
+spawned uWSGI worker 4 (pid: 884, cores: 1)
+spawned uWSGI worker 5 (pid: 885, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 03:23:28 2021] ***
+compiled with version: 8.3.0 on 08 February 2021 21:53:20
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /home/tallys_prado/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7740
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5578aa9ca7b0
+your server socket listen backlog is limited to 0 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5578aa9ca7b0 pid: 4798 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4798)
+spawned uWSGI worker 1 (pid: 4802, cores: 1)
+spawned uWSGI worker 2 (pid: 4803, cores: 1)
+spawned uWSGI worker 3 (pid: 4804, cores: 1)
+spawned uWSGI worker 4 (pid: 4805, cores: 1)
+spawned uWSGI worker 5 (pid: 4806, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+unlink(): No such file or directory [core/uwsgi.c line 1660]
+*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 03:31:35 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 7740
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 0 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 494)
+spawned uWSGI worker 1 (pid: 586, cores: 1)
+spawned uWSGI worker 2 (pid: 587, cores: 1)
+spawned uWSGI worker 3 (pid: 588, cores: 1)
+spawned uWSGI worker 4 (pid: 589, cores: 1)
+spawned uWSGI worker 5 (pid: 590, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
+*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 17:25:16 2021] ***
+compiled with version: 8.2.0 on 10 February 2019 02:42:46
+os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
+nodename: instance-1
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/tallys_prado/copycash/api
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 7740
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address copycash.sock fd 3
+your server socket listen backlog is limited to 0 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437520 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 499)
+spawned uWSGI worker 1 (pid: 579, cores: 1)
+spawned uWSGI worker 2 (pid: 580, cores: 1)
+spawned uWSGI worker 3 (pid: 581, cores: 1)
+spawned uWSGI worker 4 (pid: 582, cores: 1)
+spawned uWSGI worker 5 (pid: 583, cores: 1)
