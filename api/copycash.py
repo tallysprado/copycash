@@ -31,7 +31,7 @@ db.init_app(app)
 
 @app.route("/")
 def hello():
-    return "Hello, world"
+    return "Hello, world and Anathielly. Luv u"
 
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
