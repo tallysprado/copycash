@@ -21,7 +21,7 @@ app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 
 #cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 # cors.init_app(app)
-CORS(app, resources={r"/*": {"origins": "https://35.199.92.216:8080"}})
+CORS(app, resources={r"/*": {"origins": "https://35.199.92.216"}})
 guard = flask_praetorian.Praetorian()
 db = SQLAlchemy()
 guard.init_app(app, Users)
@@ -212,12 +212,11 @@ def config():
 
     return {'result': ret}
  
-#context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER) 
-#context.load_cert_chain('certificate.crt', 'private.key')  
+context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER) 
+context.load_cert_chain('certificate.crt', 'server.key')  
 if __name__ == "__main__":
     #app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5000)
     #app.run(ssl_context='adhoc', debug=os.getenv("DEBUG"), port=5000)
     from waitress import serve
     #serve(app, host="0.0.0.0", port="8080", url_scheme='https')
-    #app.run(host='127.0.0.1',port='8080', debug=True, ssl_context='adhoc')
-    app.run(threaded=True,host='0.0.0.0')
+    app.run(host='127.0.0.1', debug=True, ssl_context=context)
