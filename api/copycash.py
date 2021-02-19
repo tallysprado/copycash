@@ -31,7 +31,7 @@ db.init_app(app)
 
 @app.route("/")
 def hello():
-    return "Hello, world"
+    return "Hello, world and Anathielly. Luv u"
 
 
 def buy_thread(email, senha, paridade, tipo, expiracao, action, valor):
@@ -217,6 +217,11 @@ context.load_cert_chain('certificate.crt', 'server.key')
 if __name__ == "__main__":
     #app.run(host='0.0.0.0', debug=os.getenv("DEBUG"), port=5000)
     #app.run(ssl_context='adhoc', debug=os.getenv("DEBUG"), port=5000)
-    from waitress import serve
+    #from waitress import serve
     #serve(app, host="0.0.0.0", port="8080", url_scheme='https')
+<<<<<<< HEAD
     app.run(host='127.0.0.1', debug=True, ssl_context=context)
+=======
+    #app.run(host='127.0.0.1',port='8080', debug=True, ssl_context='adhoc')
+    app.run(host='0.0.0.0', ssl_context=('cert.pem','key.pem'))
+>>>>>>> a37ac2992507373e8c00c4b1a9dbd03c5beee8ab
