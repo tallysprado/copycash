@@ -4,7 +4,8 @@ const HeadComponent = () => {
   return (
     <Head>
       <title>Copycash</title>
-      <link rel="shortcut icon" href="/favicon.ico" />
+      {//<link rel="shortcut icon" href="/favicon.ico" />
+}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta content="My personal site." name="description" />
 
