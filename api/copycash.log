@@ -1171,3 +1171,14 @@ tallys.prado teste
 [pid: 4433|app: 0|req: 4/4] 177.37.194.64 () {58 vars in 1204 bytes} [Mon Feb 22 17:57:32 2021] GET / => generated 22 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
 tallys.prado teste
 [pid: 4433|app: 0|req: 5/5] 177.37.194.64 () {40 vars in 527 bytes} [Mon Feb 22 17:57:52 2021] POST /api/login => generated 287 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 4433|app: 0|req: 6/6] 177.37.194.64 () {48 vars in 775 bytes} [Mon Feb 22 18:01:40 2021] OPTIONS /api/login => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 315 bytes (1 switches on core 0)
+tallys.prado teste
+[pid: 4431|app: 0|req: 1/7] 177.37.194.64 () {50 vars in 768 bytes} [Mon Feb 22 18:01:40 2021] POST /api/login => generated 287 bytes in 52 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket copycash.sock removed.
