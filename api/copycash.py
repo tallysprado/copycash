@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from API import API
 import os
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from models import Users, Conta, Operacao, Operacoes
 from flask_sqlalchemy import SQLAlchemy
 import flask_praetorian
@@ -29,6 +29,7 @@ db.init_app(app)
 
 
 @app.route("/")
+@cross_origin
 def hello():
     return "Hello to a worldasd..."
 
