@@ -96,6 +96,7 @@ const Host = ({ subscribers }) => {
     return <Home view="login" />;
   }
 };
+  /*
 
 Host.getInitialProps = async () => {
   const response = await fetch(
@@ -128,7 +129,6 @@ Host.getInitialProps = async () => {
             'Authorization': 'Bearer '+
         }
     })
-    */
   console.log(response + "\n\n");
   console.log(subscribers);
   return {
@@ -138,5 +138,6 @@ Host.getInitialProps = async () => {
     },
   };
 };
+    */
 
 export default withRouter(Host);
