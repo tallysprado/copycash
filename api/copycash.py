@@ -26,7 +26,6 @@ guard = flask_praetorian.Praetorian()
 db = SQLAlchemy()
 guard.init_app(app, Users)
 db.init_app(app)
-#cors = CORS(app, resources={r"/api/login": {"origins": "http://localhost:5000"}})
 
 
 @app.route("/")
@@ -105,7 +104,7 @@ def check_win():
 
 
 @app.route("/api/login", methods=['POST'])
-# @cors_origin(origin='localhost',headers=['Content- Type','Authorization'])
+#@cors_origin(origin='copycash.tk',headers=['Content-Type','Authorization'])
 def login():
     data = request.get_json(force=True)
     username = data.get('username', None)
@@ -119,7 +118,6 @@ def login():
     }
 
     return ret, 200
-
 
 @app.route("/api/refresh", methods=['POST'])
 def refresh():
@@ -220,5 +218,5 @@ if __name__ == "__main__":
     #serve(app, host="0.0.0.0", port="8080", url_scheme='https')
     #app.run(host='127.0.0.1', debug=True, ssl_context=context)
     #app.run(host='127.0.0.1',port='8080', debug=True, ssl_context='adhoc')
-    
-    app.run(host='0.0.0.0', ssl_context=('cert.pem','key.pem'))
+    app.run(host='0.0.0.0')
+    #app.run(host='0.0.0.0', ssl_context=('cert.pem','key.pem'))
