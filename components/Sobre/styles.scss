@@ -2,6 +2,7 @@
   height: 100vh;
   padding-top: 100px;
   display: flex;
+
   div.background {
     width: 50%;
     height: calc(100vh);
@@ -13,9 +14,10 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     width: 50vw;
     height: 100vh;
+    padding-left: 20px;
   }
   h3 {
     color: var(--white);

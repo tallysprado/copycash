@@ -3,7 +3,7 @@ const Index = () => {
     <div id="sobre">
       <div className="background" />
       <div className="story">
-        <h3>Ladismérico Matheus</h3>
+        <h3>Nome do Produto</h3>
         <p>
           O criador da técnica Trivela trás para Opções Binárias a técnica
           Trivela&#174;, baseada nos conceitos básicos de operações a longa data
