@@ -11,10 +11,10 @@ const HeadComponent = () => {
 
       <meta property="og:title" content="Copycash" />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="Deixe eu operar na sua conta bote ai sua senha" />
+      <meta property="og:description" content="Deixe eu operar na sua conta bote ai sua senha rsrsrs" />
       <meta
         property="og:image"
-        content="https://i.ibb.co/b5rk9WL/logo.png"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png"
       />
       <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
 
